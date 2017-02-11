@@ -1,0 +1,26 @@
+[Restaurants, Cafe and Fast food]
+PRIMO CIAO C
+MAMADOU
+SPRINGROLLS
+MC DONALDS
+LILLA CAPRI
+THAI HOUSE W
+GNARLY BURGE
+MAE THAI FRI
+AGRA TANDOOR
+
+[Supermarkets]
+MAXI ICA STO
+WILLYS FRIDH
+
+[Pharmacy]
+APOTEK HJART
+
+[Electronics]
+MEDIA MARKT
+
+[Household]
+ÖOB KUNGSHOL
+
+[Fees and charges]
+AVG MAESTRO

@@ -18,7 +18,41 @@
 
 """
 
-import categories
+categories = {}
+
+def read_categories(filename):
+    f = open(filename, 'r')
+    ret = {}
+    category = ""
+    for line in f.readlines():
+        line = line.strip()
+        if line == '':
+            continue
+
+        if line.startswith('[') and line.endswith(']'):
+            category = line[1: -1]
+            continue
+
+        if line in ret.keys():
+            raise Exception("Duplicated recipient in %s" % filename)
+
+        ret[line] = category
+    return ret
+
+def get_category(recipient):
+    global categories
+    if not categories:
+        categories = read_categories("categories.txt")
+
+    if recipient.isdigit():
+        return "Account"
+
+    ret = "Unknown"
+    try:
+        ret = categories[recipient]
+    except KeyError:
+        print "Unknow category: %s" % recipient
+    return ret
 
 def str2number(num_str):
     return float(num_str.replace(',', ''))
@@ -28,7 +62,7 @@ class Transaction:
         self.date = date
 
         self.resipient = recipient
-        self.category = categories.get_category(recipient)
+        self.category = get_category(recipient)
 
         amount = str2number(amount)
         self.amount = abs(amount)
