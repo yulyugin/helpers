@@ -35,6 +35,7 @@ def main():
     env = mkenv()
     e = expense_from_csv.expense_reader(env.file)
     print analyse.total_expense(e)
+    analyse.category_analysis(e)
 
 if __name__ == "__main__":
     sys.exit(main())

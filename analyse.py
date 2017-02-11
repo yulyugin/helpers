@@ -17,6 +17,8 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
+import matplotlib.pyplot as plt
+
 def total_expense(transactions, skip_account_transfers = True):
     total = 0.
     for t in transactions:
@@ -25,3 +27,34 @@ def total_expense(transactions, skip_account_transfers = True):
         if t.is_expense:
             total += t.amount
     return total
+
+def pie_chart(groups, total = 1.):
+    payments = []
+    labels = []
+    g_sorted = sorted(((v,k) for k,v in groups.iteritems()), reverse=True)
+    for i in g_sorted:
+        payments.append(i[0])
+        labels.append('{0} - {1:.1f}%'.format(i[1], 100. * i[0] / total))
+
+    pie = plt.pie(payments, startangle=90)
+    plt.axis('equal')
+    plt.tight_layout()
+    legend = plt.legend(pie[0], labels, loc='upper left', fontsize=10)
+
+    plt.show()
+
+def category_analysis(transactions, skip_account_transfers = True):
+    categories = {}
+    total = 0.
+    for t in transactions:
+        if skip_account_transfers and t.category == 'Account':
+            continue
+        if not t.is_expense:
+            continue
+        try:
+            categories[t.category] += t.amount
+        except KeyError:
+            categories[t.category] = t.amount
+        total += t.amount
+
+    pie_chart(categories, total)
