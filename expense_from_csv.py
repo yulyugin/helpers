@@ -16,8 +16,11 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
+import re
 import csv
+from datetime import datetime, date
 from itertools import islice
+
 from transaction import Transaction
 
 def expense_reader(filename):
@@ -28,6 +31,23 @@ def expense_reader(filename):
     ret = list()
     with open(filename, 'rb') as csvfile:
         expense_reader = csv.reader(csvfile)
+
+        # Skip lines that doesn't contatin relevant transaction information
         for i in islice(expense_reader, 5, None):
-            ret.append(Transaction(i[1], i[3], i[4]))
+            # Remove trailing spaces
+            receiver = i[3].strip()
+            date = None
+
+            # Receiver are usually in "Name/YY-MM-DD" format.
+            # Separate these fields
+            namedate = receiver.split('/')
+            if len(namedate) == 2:
+                date = datetime.strptime(namedate[1], "%y-%m-%d")
+                receiver = namedate[0].strip()
+            else:
+                # Use currency date if date is not available in receiver field
+                date = datetime.strptime(i[1], "%Y-%m-%d")
+
+            ret.append(Transaction(date, receiver, i[4]))
+
     return ret

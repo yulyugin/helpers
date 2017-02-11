@@ -18,22 +18,15 @@
 
 """
 
-from datetime import datetime, date
-import re
-
 import categories
-
-def str2date(date_str):
-    return datetime.strptime(date_str, "%Y-%m-%d")
 
 def str2number(num_str):
     return float(num_str.replace(',', ''))
 
 class Transaction:
     def __init__(self, date, recipient, amount):
-        self.date = str2date(date)
+        self.date = date
 
-        recipient = recipient.strip()
         self.resipient = recipient
         self.category = categories.get_category(recipient)
 
