@@ -34,11 +34,19 @@ def pie_chart(groups, total = 1.):
     g_sorted = sorted(((v,k) for k,v in groups.iteritems()), reverse=True)
     for i in g_sorted:
         payments.append(i[0])
-        labels.append('{0} - {1:.1f}%'.format(i[1], 100. * i[0] / total))
+        labels.append('{} - {:,.2f} ({:.1f}%)'.format(i[1], i[0], 100. * i[0] / total))
 
+    # Draw a pie chart
     pie = plt.pie(payments, startangle=90)
     plt.axis('equal')
     plt.tight_layout()
+
+    # Create a blank rectangle to add total label
+    extra = plt.Rectangle((0, 0), 1, 1, fc="w", fill=False, edgecolor='none', linewidth=0) 
+    pie[0].append(extra)
+    labels.append("Total - {:,.2f}".format(total))
+
+    # Add a legend
     legend = plt.legend(pie[0], labels, loc='upper left', fontsize=10)
 
     plt.show()
