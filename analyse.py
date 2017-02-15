@@ -18,6 +18,13 @@
 """
 
 import matplotlib.pyplot as plt
+from datetime import timedelta, datetime
+from enum import Enum
+
+class Granularity(Enum):
+    Week = 0
+    Month = 1
+    Year = 2
 
 def total_expense(transactions, skip_account_transfers = True):
     total = 0.
@@ -66,3 +73,56 @@ def category_analysis(transactions, skip_account_transfers = True):
         total += t.amount
 
     pie_chart(categories, total)
+
+class AnalysisResult():
+    def __init__(self):
+        # amount[category] = [amount0, amount1, ...] list of amount for each period
+        self.amount = {}
+        self.periods = []
+
+    def new_category(self, category):
+        if len(self.periods) <= 1:
+            self.amount[category] = []
+            self.amount[category].append(0)
+        else:
+            self.amount[category] = []
+            for i in xrange(len(self.periods)):
+                self.amount[category].append(0)
+
+    def add_expense(self, category, amount):
+        try:
+            self.amount[category][-1] += amount
+        except KeyError:
+            self.new_category(category)
+            self.amount[category][-1] += amount
+
+    def add_period(self, description):
+        self.periods.append(description)
+        for c in self.amount.values():
+            c.append(0)
+
+def get_last_date(the_date, granularity):
+    if granularity == Granularity.Week:
+        # Closest Sunday
+        return the_date + timedelta((13 - the_date.weekday()) % 7)
+
+def comparative_analysis(transactions, skip_account_transfers = True,
+                         granularity = Granularity.Week):
+    last_date = datetime.min.date()
+    result = AnalysisResult()
+    for t in transactions:
+        if skip_account_transfers and t.category == 'Account':
+            continue
+        if not t.is_expense:
+            continue
+
+        if t.date <= last_date:
+            # Current period. Update the result
+            result.add_expense(t.category, t.amount)
+        else:
+            # Next period
+            last_date = get_last_date(t.date, granularity)
+            result.add_period("period") # TODO
+            result.add_expense(t.category, t.amount)
+    # TODO: print histogram
+    print result.amount

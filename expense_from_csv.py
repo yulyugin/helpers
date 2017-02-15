@@ -17,7 +17,7 @@
 """
 
 import csv
-from datetime import datetime, date
+from datetime import datetime
 from itertools import islice
 
 from transaction import Transaction
@@ -41,11 +41,11 @@ def expense_reader(filename):
             # Separate these fields
             namedate = receiver.split('/')
             if len(namedate) == 2:
-                date = datetime.strptime(namedate[1], "%y-%m-%d")
+                date = datetime.strptime(namedate[1], "%y-%m-%d").date()
                 receiver = namedate[0].strip()
             else:
                 # Use currency date if date is not available in receiver field
-                date = datetime.strptime(i[1], "%Y-%m-%d")
+                date = datetime.strptime(i[1], "%Y-%m-%d").date()
 
             ret.append(Transaction(date, receiver, i[4]))
 
