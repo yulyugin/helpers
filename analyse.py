@@ -78,6 +78,7 @@ class AnalysisResult():
     def __init__(self):
         # amount[category] = [amount0, amount1, ...] list of amount for each period
         self.amount = {}
+        self.amount['Total'] = []
         self.periods = []
 
     def new_category(self, category):
@@ -90,6 +91,7 @@ class AnalysisResult():
                 self.amount[category].append(0)
 
     def add_expense(self, category, amount):
+        self.amount['Total'][-1] += amount
         try:
             self.amount[category][-1] += amount
         except KeyError:
