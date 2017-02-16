@@ -18,6 +18,7 @@
 """
 
 import matplotlib.pyplot as plt
+import numpy as np
 from datetime import timedelta, datetime
 from enum import Enum
 
@@ -55,6 +56,21 @@ def pie_chart(groups, total = 1.):
 
     # Add a legend
     legend = plt.legend(pie[0], labels, loc='upper left', fontsize=10)
+
+    plt.show()
+
+def histogram(data, labels):
+    width = 1
+    space = 2 * width
+    shift = width * len(data[0]) + space
+    ind = np.arange(len(data[0]))
+
+    # Create a color map
+    norm = plt.Normalize()
+    colors = plt.cm.jet(norm(data[-1]))
+
+    for i in xrange(len(data)):
+        plt.bar(ind + shift * i, data[i], width, color = colors)
 
     plt.show()
 
@@ -126,5 +142,4 @@ def comparative_analysis(transactions, skip_account_transfers = True,
             last_date = get_last_date(t.date, granularity)
             result.add_period("period") # TODO
             result.add_expense(t.category, t.amount)
-    # TODO: print histogram
-    print result.amount
+    histogram(result.amount.values(), result.periods)
