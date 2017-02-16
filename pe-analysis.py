@@ -35,8 +35,8 @@ def main():
     env = mkenv()
     e = expense_from_csv.expense_reader(env.file)
     e.sort(key=lambda x: x.date, reverse=False)
-    analyse.comparative_analysis(e)
     analyse.category_analysis(e)
+    analyse.comparative_analysis(e)
 
 if __name__ == "__main__":
     sys.exit(main())
