@@ -59,7 +59,7 @@ def pie_chart(groups, total = 1.):
 
     plt.show()
 
-def histogram(data, labels):
+def histogram(data, categories, labels):
     width = 1
     space = 2 * width
     shift = width * len(data[0]) + space
@@ -69,8 +69,21 @@ def histogram(data, labels):
     norm = plt.Normalize()
     colors = plt.cm.jet(norm(data[-1]))
 
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+
     for i in xrange(len(data)):
-        plt.bar(ind + shift * i, data[i], width, color = colors)
+        ax.bar(ind + shift * i, data[i], width, color = colors)
+
+    # Axes and labels
+    ax.set_title("Expenses by categories and week")
+    xind = np.arange(len(data))
+    for i in xind:
+        # Aligned to the center of data
+        xind[i] = (shift - space) / 2 + shift * i
+    ax.set_xticks(xind)
+    xticks = ax.set_xticklabels(categories)
+    plt.setp(xticks, rotation=45, fontsize=10)
 
     plt.show()
 
@@ -142,4 +155,4 @@ def comparative_analysis(transactions, skip_account_transfers = True,
             last_date = get_last_date(t.date, granularity)
             result.add_period("period") # TODO
             result.add_expense(t.category, t.amount)
-    histogram(result.amount.values(), result.periods)
+    histogram(result.amount.values(), result.amount.keys(), result.periods)
