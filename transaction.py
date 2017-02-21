@@ -25,6 +25,7 @@ def read_categories(filename):
     ret = {}
     category = ""
     for line in f.readlines():
+        line = line.split('#', 1)[0] # remove comments
         line = line.strip()
         if line == '':
             continue
@@ -61,9 +62,12 @@ class Transaction:
     def __init__(self, date, recipient, amount):
         self.date = date
 
-        self.resipient = recipient
-        self.category = get_category(recipient)
-
         amount = str2number(amount)
         self.amount = abs(amount)
         self.is_expense = amount < 0
+
+        self.resipient = recipient
+        if self.is_expense:
+            self.category = get_category(recipient)
+        else:
+            self.category = "Refill"
