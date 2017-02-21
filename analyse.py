@@ -50,7 +50,7 @@ def pie_chart(groups, total = 1.):
     plt.tight_layout()
 
     # Create a blank rectangle to add total label
-    extra = plt.Rectangle((0, 0), 1, 1, fc="w", fill=False, edgecolor='none', linewidth=0) 
+    extra = plt.Rectangle((0, 0), 1, 1, fc="w", fill=False, edgecolor='none', linewidth=0)
     pie[0].append(extra)
     labels.append("Total - {:,.2f}".format(total))
 
@@ -59,7 +59,7 @@ def pie_chart(groups, total = 1.):
 
     plt.show()
 
-def histogram(data, categories, labels):
+def histogram(data, categories, labels, period_name):
     width = 1
     space = 2 * width
     shift = width * len(data[0]) + space
@@ -72,11 +72,12 @@ def histogram(data, categories, labels):
     fig = plt.figure()
     ax = fig.add_subplot(111)
 
+    label_colors = list()
     for i in xrange(len(data)):
-        ax.bar(ind + shift * i, data[i], width, color = colors)
+        label_colors = ax.bar(ind + shift * i, data[i], width, color = colors)
 
     # Axes and labels
-    ax.set_title("Expenses by categories and week")
+    ax.set_title("Expenses by categories and {}".format(period_name))
     xind = np.arange(len(data))
     for i in xind:
         # Aligned to the center of data
@@ -84,6 +85,8 @@ def histogram(data, categories, labels):
     ax.set_xticks(xind)
     xticks = ax.set_xticklabels(categories)
     plt.setp(xticks, rotation=45, fontsize=10)
+
+    plt.legend(label_colors, labels, loc='upper left', fontsize=10)
 
     plt.show()
 
@@ -105,7 +108,9 @@ def category_analysis(transactions, skip_account_transfers = True):
 
 class AnalysisResult():
     def __init__(self):
-        # amount[category] = [amount0, amount1, ...] list of amount for each period
+        # amount[category] = [amount0, amount1, ...]
+        # amount[category][i] - amount spent for category during period i
+        # periods[i] - name of period i
         self.amount = {}
         self.amount['Total'] = []
         self.periods = []
@@ -132,10 +137,26 @@ class AnalysisResult():
         for c in self.amount.values():
             c.append(0)
 
+    def filter_rare_categories(self, min_number=2):
+        for category in self.amount.keys():
+            active_periods = 0
+            for period in self.amount[category]:
+                if period != 0:
+                    active_periods += 1
+
+            if active_periods < min_number:
+                del self.amount[category]
+        print self.amount
+
+
 def get_last_date(the_date, granularity):
     if granularity == Granularity.Week:
         # Closest Sunday
         return the_date + timedelta((13 - the_date.weekday()) % 7)
+
+def get_name(granularity):
+    if granularity == Granularity.Week:
+        return "week"
 
 def comparative_analysis(transactions, skip_account_transfers = True,
                          granularity = Granularity.Week):
@@ -152,7 +173,11 @@ def comparative_analysis(transactions, skip_account_transfers = True,
             result.add_expense(t.category, t.amount)
         else:
             # Next period
+            first_date = t.date
             last_date = get_last_date(t.date, granularity)
-            result.add_period("period") # TODO
+            result.add_period("{0:%b %d} - {1:%b %d}".format(first_date,
+                                                             last_date))
             result.add_expense(t.category, t.amount)
-    histogram(result.amount.values(), result.amount.keys(), result.periods)
+    result.filter_rare_categories()
+    histogram(result.amount.values(), result.amount.keys(), result.periods,
+              get_name(granularity))
