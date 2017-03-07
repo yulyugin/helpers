@@ -18,7 +18,10 @@
 
 """
 
+import re
+
 categories = {}
+patterns = []
 
 def read_categories(filename):
     f = open(filename, 'r')
@@ -34,8 +37,24 @@ def read_categories(filename):
             category = line[1: -1]
             continue
 
+        if "*" in line:
+            name = line.replace("*", "")
+            pattern = {}
+            pattern['reobj'] = re.compile("^" + line.replace("*", ".*") + "$")
+            pattern['name'] = name
+            patterns.append(pattern)
+
+            if name in ret.keys():
+                if ret[name] != category:
+                    raise Exception("Name %s matches multiple categories: %s" +
+                                    " and %s in file %s"
+                                    % (name, ret[name], categories, filename))
+                continue
+
+            ret[name] = category
+
         if line in ret.keys():
-            raise Exception("Duplicated recipient in %s" % filename)
+            raise Exception("Duplicated recipient %s in %s" % (line, filename))
 
         ret[line] = category
     return ret
@@ -52,6 +71,10 @@ def get_category(recipient):
     try:
         ret = categories[recipient]
     except KeyError:
+        for p in patterns:
+            if p['reobj'].match(recipient):
+                return categories[p['name']]
+
         print "Unknow category: %s" % recipient
     return ret
 
