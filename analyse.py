@@ -146,8 +146,6 @@ class AnalysisResult():
 
             if active_periods < min_number:
                 del self.amount[category]
-        print self.amount
-
 
 def get_last_date(the_date, granularity):
     if granularity == Granularity.Week:
