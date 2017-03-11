@@ -137,7 +137,7 @@ class AnalysisResult():
         for c in self.amount.values():
             c.append(0)
 
-    def filter_rare_categories(self, min_number=2):
+    def filter_rare_categories(self, min_number=3):
         for category in self.amount.keys():
             active_periods = 0
             for period in self.amount[category]:
