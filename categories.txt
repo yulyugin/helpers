@@ -13,6 +13,7 @@ STHLM KEBAB
 SABOR CARIOC
 SUSHI KAWA K
 VÄSTERMALM # Sushi
+SUSHIBAR DOS
 
 [Supermarkets]
 MAXI ICA STO
@@ -61,5 +62,8 @@ TRAMPOOLIN SIMSKOLOR I S
 [Alcohol]
 ARLANDA WALK
 
-[Communication]
+[Communications]
 TE[0-9]
+
+[Cash]
+AUT[0-9]:[0-9]
