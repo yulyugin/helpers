@@ -24,6 +24,21 @@ categories = {}
 patterns = []
 
 def read_categories(filename):
+    def add_pattern(ret, name, category, pattern_str):
+        pattern = {}
+        pattern['reobj'] = re.compile(pattern_str)
+        pattern['name'] = name
+
+        if name in ret.keys():
+            if ret[name] != category:
+                raise Exception("Name %s matches multiple categories: %s" +
+                                    " and %s in file %s"
+                                    % (name, ret[name], categories, filename))
+            return
+
+        patterns.append(pattern)
+        ret[name] = category
+
     f = open(filename, 'r')
     ret = {}
     category = ""
@@ -39,19 +54,12 @@ def read_categories(filename):
 
         if "*" in line:
             name = line.replace("*", "")
-            pattern = {}
-            pattern['reobj'] = re.compile("^" + line.replace("*", ".*") + "$")
-            pattern['name'] = name
-            patterns.append(pattern)
+            add_pattern(ret, name, category, "^" + line.replace("*", ".*") + "$")
 
-            if name in ret.keys():
-                if ret[name] != category:
-                    raise Exception("Name %s matches multiple categories: %s" +
-                                    " and %s in file %s"
-                                    % (name, ret[name], categories, filename))
-                continue
-
-            ret[name] = category
+        if "[" in line and "]" in line:
+            # TODO: error checks
+            name = line.split("[")[0]
+            add_pattern(ret, name, category, line.replace("]", "]*"))
 
         if line in ret.keys():
             raise Exception("Duplicated recipient %s in %s" % (line, filename))
