@@ -35,6 +35,7 @@ def main():
     env = mkenv()
     e = expense_from_csv.expense_reader(env.file)
     e.sort(key=lambda x: x.date, reverse=False)
+    analyse.optimize(e)
     analyse.category_analysis(e)
     analyse.comparative_analysis(e)
 

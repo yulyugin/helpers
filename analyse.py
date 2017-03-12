@@ -179,3 +179,29 @@ def comparative_analysis(transactions, skip_account_transfers = True,
     result.filter_rare_categories()
     histogram(result.amount.values(), result.amount.keys(), result.periods,
               get_name(granularity))
+
+def optimize(transactions, skip_account_transfers = True):
+    """
+    If expense per category is less than 1% than category name is changes to
+    'Other' for all transactions that maches this category.
+    """
+    categories = {}
+    total = 0.
+    for t in transactions:
+        if skip_account_transfers and t.category == 'Account':
+            continue
+        if not t.is_expense:
+            continue
+        try:
+            categories[t.category] += t.amount
+        except KeyError:
+            categories[t.category] = t.amount
+        total += t.amount
+
+    for t in transactions:
+        if skip_account_transfers and t.category == 'Account':
+            continue
+        if not t.is_expense:
+            continue
+        if categories[t.category] < (total * 0.01):
+            t.category = 'Other'
