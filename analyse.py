@@ -19,8 +19,9 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-from datetime import timedelta, datetime
+from datetime import timedelta, datetime, date
 from enum import Enum
+from calendar import monthrange
 
 class Granularity(Enum):
     Week = 0
@@ -151,13 +152,18 @@ def get_last_date(the_date, granularity):
     if granularity == Granularity.Week:
         # Closest Sunday
         return the_date + timedelta((13 - the_date.weekday()) % 7)
+    if granularity == Granularity.Month:
+        return date(the_date.year, the_date.month,
+                    monthrange(the_date.year, the_date.month)[1])
 
 def get_name(granularity):
     if granularity == Granularity.Week:
         return "week"
+    if granularity == Granularity.Month:
+        return "month"
 
 def comparative_analysis(transactions, skip_account_transfers = True,
-                         granularity = Granularity.Week):
+                         granularity = Granularity.Month):
     last_date = datetime.min.date()
     result = AnalysisResult()
     for t in transactions:
