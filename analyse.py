@@ -88,6 +88,7 @@ def histogram(data, categories, labels, period_name):
     plt.setp(xticks, rotation=45, fontsize=10)
 
     plt.legend(label_colors, labels, loc='upper left', fontsize=10)
+    plt.grid(axis = 'y')
 
     plt.show()
 
