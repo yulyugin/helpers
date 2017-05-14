@@ -21,7 +21,7 @@
 import argparse
 import sys
 
-import expense_from_csv
+import expense_from_seb_csv
 import expense_from_seb_xlsx
 import analyse
 
