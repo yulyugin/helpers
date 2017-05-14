@@ -34,7 +34,7 @@ def expense_reader(filename):
         # Skip lines that doesn't contatin relevant transaction information
         for i in islice(expense_reader, 5, None):
             # Remove trailing spaces
-            receiver = i[3].strip()
+            receiver = unicode(i[3].strip())
             date = None
 
             # Receiver are usually in "Name/YY-MM-DD" format.
