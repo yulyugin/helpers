@@ -26,7 +26,7 @@ import expense_from_seb_xlsx
 import analyse
 
 def mkenv():
-    parser = argparse.ArgumentParser(add_help=True, version='0.2',
+    parser = argparse.ArgumentParser(add_help=True, version='0.3',
                                      description="Personal expense analysis.")
     parser.add_argument("file", type=str, action="store",
                         help="Path to file with expense data.")
