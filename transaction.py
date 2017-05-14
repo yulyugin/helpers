@@ -93,7 +93,8 @@ class Transaction:
     def __init__(self, date, recipient, amount):
         self.date = date
 
-        amount = str2number(amount)
+        if type(amount) == str:
+            amount = str2number(amount)
         self.amount = abs(amount)
         self.is_expense = amount < 0
 

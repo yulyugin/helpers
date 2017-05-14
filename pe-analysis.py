@@ -22,6 +22,7 @@ import argparse
 import sys
 
 import expense_from_csv
+import expense_from_seb_xlsx
 import analyse
 
 def mkenv():
@@ -33,7 +34,8 @@ def mkenv():
 
 def main():
     env = mkenv()
-    e = expense_from_csv.expense_reader(env.file)
+    e = expense_from_seb_xlsx.expense_reader(env.file)
+    #e = expense_from_csv.expense_reader(env.file)
     e.sort(key=lambda x: x.date, reverse=False)
     analyse.optimize(e)
     analyse.category_analysis(e)
