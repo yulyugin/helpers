@@ -60,11 +60,14 @@ MQ STOCKHOLM
 
 [Transport]
 UBER*
-AEROFLOT*
 WWW FLYGBUSS
 SL CENTER*
 FB[0-9] # FLYGBUSSARNA
 SL[0-9]
+TRAFIKVERKET
+
+[Air Tickets]
+AEROFLOT*
 TP[0-9] # tickets.se
 SR[0-9] # travelstart.se
 
@@ -83,6 +86,7 @@ ARLANDA WALK
 
 [Communications]
 TE[0-9]
+HALEBOP
 
 [Cash]
 AUT[0-9]:[0-9]
@@ -108,3 +112,7 @@ PANDURO HOBB
 
 [Hotels]
 AIRBNB   HMC
+
+[Kiosks]
+IZ  KRISTOFF
+PRESSBYRÅN [0-9]
