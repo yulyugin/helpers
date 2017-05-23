@@ -20,6 +20,7 @@ JENSENS BOFH
 YOKU SUSHI
 RESTAURANG M
 SUSHI BAR LU
+PIZZERIA AMI
 
 [Supermarkets]
 MAXI ICA STO
@@ -46,6 +47,7 @@ ENKLA VARDAG
 
 [Flowers]
 LILLA CHALET
+INTERFLORA F
 
 [Clothes and Shoes]
 POLARN O PYR
@@ -63,13 +65,14 @@ UBER*
 WWW FLYGBUSS
 SL CENTER*
 FB[0-9] # FLYGBUSSARNA
-SL[0-9]
+SL[0-9] # SL internet payments
 TRAFIKVERKET
 
 [Air Tickets]
 AEROFLOT*
 TP[0-9] # tickets.se
 SR[0-9] # travelstart.se
+RS[0-9] # odenresor.se
 
 [Medical care]
 KAROLINSKA UNIVERSITETSS
@@ -85,7 +88,7 @@ JARLA CYKEL
 ARLANDA WALK
 
 [Communications]
-TE[0-9]
+TE[0-9] # Comviq
 HALEBOP
 
 [Cash]
