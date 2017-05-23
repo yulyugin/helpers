@@ -43,7 +43,7 @@ def read_categories(filename):
     ret = {}
     category = u""
     for line in f.readlines():
-        line = unicode(line)
+        line = line.decode('utf-8')
         line = line.split('#', 1)[0] # remove comments
         line = line.strip()
         if line == '':
