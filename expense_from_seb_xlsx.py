@@ -39,10 +39,16 @@ def expense_reader(filename):
         # Receiver are usually in "Name/YY-MM-DD" format.
         # Separate these fields
         namedate = receiver.split('/')
-        if len(namedate) == 2:
-            date = datetime.strptime(namedate[1], "%y-%m-%d").date()
-            receiver = namedate[0].strip()
-        else:
+        if len(namedate) >= 2:
+            try:
+                date = datetime.strptime(namedate[-1], "%y-%m-%d").date()
+            except ValueError:
+                pass
+            else:
+                # '/' symbols can be in the middle of the string
+                receiver = receiver[:-(len(namedate[-1]) + 1)].strip()
+
+        if date == None:
             # Use currency date if date is not available in receiver field
             date = datetime.strptime(row[1].value, "%Y-%m-%d").date()
 
