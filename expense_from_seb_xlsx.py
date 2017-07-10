@@ -19,6 +19,7 @@
 import openpyxl
 from datetime import datetime
 from itertools import islice
+import re
 
 from transaction import Transaction
 
@@ -51,6 +52,9 @@ def expense_reader(filename):
         if date == None:
             # Use currency date if date is not available in receiver field
             date = datetime.strptime(row[1].value, "%Y-%m-%d").date()
+
+        # Remove special symbols from the end of the name
+        receiver = re.sub(ur'(([^\w]|_|\s)+)$', '', receiver)
 
         ret.append(Transaction(date, receiver, row[4].value))
 
