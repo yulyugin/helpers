@@ -139,14 +139,16 @@ class AnalysisResult():
         for c in self.amount.values():
             c.append(0)
 
-    def filter_rare_categories(self, min_number=3):
+    def filter_rare_categories(self):
         for category in self.amount.keys():
-            active_periods = 0
+            active_periods = 0.
+            total_periods = 0.
             for period in self.amount[category]:
+                total_periods += 1
                 if period != 0:
                     active_periods += 1
 
-            if active_periods < min_number:
+            if (total_periods / active_periods) > 2:
                 del self.amount[category]
 
 def get_last_date(the_date, granularity):
