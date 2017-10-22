@@ -139,7 +139,7 @@ class AnalysisResult():
         for c in self.amount.values():
             c.append(0)
 
-    def filter_rare_categories(self):
+    def optimize_categories(self):
         for category in self.amount.keys():
             active_periods = 0.
             total_periods = 0.
@@ -148,7 +148,9 @@ class AnalysisResult():
                 if period != 0:
                     active_periods += 1
 
-            if (total_periods / active_periods) > 2:
+            if total_periods / active_periods > 4:
+                for i in xrange(int(total_periods)):
+                    self.amount['Other'][i] += self.amount[category][i]
                 del self.amount[category]
 
 def get_last_date(the_date, granularity):
@@ -185,7 +187,7 @@ def comparative_analysis(transactions, skip_account_transfers = True,
             result.add_period("{0:%b %d} - {1:%b %d}".format(first_date,
                                                              last_date))
             result.add_expense(t.category, t.amount)
-    result.filter_rare_categories()
+    result.optimize_categories()
     histogram(result.amount.values(), result.amount.keys(), result.periods,
               get_name(granularity))
 
