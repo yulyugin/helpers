@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-from enum import Enum
 import sys
 import urllib.request
 from html.parser import HTMLParser
@@ -79,7 +78,9 @@ class RunstenParser(HTMLParser):
                 self.longitude = dms2d(data)
 
 def main():
-    runstenar = list()
+    template = "type=\"waypoint\" latitude=\"%f\" longitude=\"%f\" name=\"%s\" comment = \"Source: %s\"\n"
+    flive = open('live.txt', 'w')
+    fdead = open('dead.txt', 'w')
     for land in lands:
         land_url = root_url + '/' + land
         land_url = urllib.parse.quote_plus(land_url, ':/')
@@ -96,17 +97,19 @@ def main():
             runsten_data.feed(data.decode('utf-8'))
             runsten.latitude = runsten_data.latitude
             runsten.longitude = runsten_data.longitude
-        runstenar.extend(parser.runstenar)
 
-    flive = open('live.txt', 'w')
-    fdead = open('dead.txt', 'w')
-    template = "type=\"waypoint\" latitude=\"%f\" longitude=\"%f\" name=\"%s\"\n"
-    for runsten in runstenar:
-        if runsten.alive:
-            flive.write(template % (runsten.latitude, runsten.longitude, runsten.name))
-        else:
-            fdead.write(template % (runsten.latitude, runsten.longitude, runsten.name))
+            if runsten.latitude == 0 and runsten.longitude == 0:
+                print("Undefined coordinates for runsten %s" % runsten.name)
+                continue
 
+            output_str = template % (runsten.latitude, runsten.longitude, runsten.name, runsten_url)
+            if runsten.alive:
+                flive.write(output_str)
+            else:
+                fdead.write(output_str)
+
+    flive.close()
+    fdead.close()
     return 0
 
 if __name__ == "__main__":
