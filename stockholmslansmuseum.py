@@ -21,6 +21,10 @@ class RunstenParser(HTMLParser):
         self.longitude = 0.
         self.latitude = 0.
         self.name = ""
+        self.alive = True
+        self.in_museum = False
+        self.in_church = True
+        self.comment = ""
 
     def handle_starttag(self, tag, attrs):
         if tag == "script":
@@ -29,9 +33,13 @@ class RunstenParser(HTMLParser):
             self.tag = tag
             self.stage = self.NAME
         elif tag == "p" and self.stage != self.PENDING:
-            self.stage += 1
+            if self.stage != self.PENDING:
+                self.stage += 1
+        elif tag == "b":
+            if self.stage != self.DESCRIPTION:
+                self.stage = self.PENDING
         else:
-            pass
+            self.stage = self.PENDING
 
     def handle_endtag(self, tag):
         if tag == self.tag:
@@ -50,22 +58,47 @@ class RunstenParser(HTMLParser):
             if m:
                 self.name = m.groups(0)[0]
         elif self.tag == "h2":
-            assert self.name == data
+            if self.name:
+                assert self.name == data
 
         if self.stage == self.COMMENT:
-            print(data)
             self.stage = self.PENDING
 
+            if re.search("Försvunnen eller förstörd. Känd tack vare äldre avbildning.", data):
+                self.alive = False
+            elif data == "Ristningen förstörd.":
+                self.alive = False
+            elif re.search("Försvunnen.", data):
+                self.alive = False
+            elif data == "Förvunnen":
+                self.alive = False
+
+            if re.search("muse[um|et]", data, re.DOTALL):
+                self.in_museum = True
+
+            if re.search("kyrka", data, re.DOTALL):
+                self.in_church = True
+
+            self.comment = data
+
 def main():
-    i = 4
+    i = 1
     while True:
         runsten_url = root_url + str(i)
-        data = urllib.request.urlopen(runsten_url).read()
+        try:
+            data = urllib.request.urlopen(runsten_url).read()
+        except urllib.error.HTTPError as e:
+            if e.code == 500:
+                # All rune stones have been handled
+                break
+            else:
+                raise
 
         runsten_data = RunstenParser()
         runsten_data.feed(data.decode('utf-8'))
+
         i += 1
-        break
+
     return 0
 
 if __name__ == "__main__":
