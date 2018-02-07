@@ -1,0 +1,1004 @@
+#VIKING GPS Data file http://viking.sf.net/
+FILE_VERSION=1
+
+xmpp=256.000000
+ympp=256.000000
+lat=59.319326
+lon=18.049012
+mode=mercator
+color=#cccccc
+highlightcolor=#eea500
+drawscale=t
+drawcentermark=t
+drawhighlight=t
+
+~Layer Map
+name=Default Map
+mode=13
+directory=
+cache_type=1
+mapfile=
+alpha=255
+autodownload=t
+adlonlymissing=f
+mapzoom=0
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=Lost or destroyed
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30.000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#000000
+wptextcolor=#ffffff
+wpbgcolor=#000000
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=
+metadataauthor=
+metadatatime=2018-02-07T21:09:27.922644Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypoint" latitude="59.051299999999998" longitude="17.579100000000000" name="Sö 21" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/4"
+type="waypoint" latitude="59.008200000000002" longitude="17.825800000000001" name="Sö 215" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/5"
+type="waypoint" latitude="59.016599999999997" longitude="17.805399999999999" name="Sö 223" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/14"
+type="waypoint" latitude="59.035899999999998" longitude="17.886700000000001" name="Sö 228" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/19"
+type="waypoint" latitude="58.998199999999997" longitude="17.652999999999999" name="Sö 23" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/21"
+type="waypoint" latitude="59.102499999999999" longitude="18.115900000000000" name="Sö 238" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/30"
+type="waypoint" latitude="59.107199999999999" longitude="18.028900000000000" name="Sö 247" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/40"
+type="waypoint" latitude="58.974200000000003" longitude="17.874300000000002" name="Sö 253" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/46"
+type="waypoint" latitude="58.958100000000002" longitude="17.895900000000001" name="Sö 257" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/50"
+type="waypoint" latitude="59.116399999999999" longitude="18.169200000000000" name="Sö 263" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/56"
+type="waypoint" latitude="59.149000000000001" longitude="18.251899999999999" name="Sö 267" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/60"
+type="waypoint" latitude="59.165100000000002" longitude="18.253100000000000" name="Sö 271" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/64"
+type="waypoint" latitude="59.238199999999999" longitude="17.816600000000001" name="Sö 282" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/68"
+type="waypoint" latitude="59.252800000000001" longitude="17.800000000000001" name="Sö 287" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/73"
+type="waypoint" latitude="59.136600000000001" longitude="17.642900000000001" name="Sö 294" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/80"
+type="waypoint" latitude="59.167200000000001" longitude="17.730300000000000" name="Sö 295" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/81"
+type="waypoint" latitude="59.191699999999997" longitude="17.616099999999999" name="Sö 310" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/96"
+type="waypoint" latitude="59.196300000000001" longitude="17.441400000000002" name="Sö 339" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/101"
+type="waypoint" latitude="59.198900000000002" longitude="17.415199999999999" name="Sö 341" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/103"
+type="waypoint" latitude="59.181399999999996" longitude="17.451100000000000" name="Sö 342" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/104"
+type="waypoint" latitude="59.408400000000000" longitude="17.870699999999999" name="U82" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/137"
+type="waypoint" latitude="59.493899999999996" longitude="17.882200000000001" name="U 109" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/147"
+type="waypoint" latitude="59.497799999999998" longitude="17.865600000000001" name="U 111" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/150"
+type="waypoint" latitude="59.507100000000001" longitude="17.899300000000000" name="U 113" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/152"
+type="waypoint" latitude="59.555100000000003" longitude="17.931899999999999" name="U282" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/164"
+type="waypoint" latitude="59.555100000000003" longitude="17.931899999999999" name="U283" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/165"
+type="waypoint" latitude="59.525100000000002" longitude="18.238399999999999" name="U 189" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/181"
+type="waypoint" latitude="59.600800000000000" longitude="18.294400000000000" name="U 191" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/184"
+type="waypoint" latitude="59.577800000000003" longitude="18.205900000000000" name="U 196" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/189"
+type="waypoint" latitude="59.359900000000003" longitude="17.531400000000001" name="U 2" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/193"
+type="waypoint" latitude="59.536799999999999" longitude="18.168199999999999" name="U205" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/200"
+type="waypoint" latitude="59.536799999999999" longitude="18.168199999999999" name="U206" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/201"
+type="waypoint" latitude="59.542099999999998" longitude="18.167999999999999" name="U211" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/207"
+type="waypoint" latitude="59.647900000000000" longitude="17.544899999999998" name="U669" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/242"
+type="waypoint" latitude="59.579500000000003" longitude="17.655500000000000" name="U627" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/244"
+type="waypoint" latitude="59.579300000000003" longitude="17.673200000000001" name="U628" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/245"
+type="waypoint" latitude="59.399900000000002" longitude="17.921299999999999" name="U71" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/248"
+type="waypoint" latitude="59.581699999999998" longitude="17.949000000000002" name="U300" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/272"
+type="waypoint" latitude="59.581099999999999" longitude="17.948599999999999" name="U301" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/273"
+type="waypoint" latitude="59.571199999999997" longitude="17.951499999999999" name="U314" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/287"
+type="waypoint" latitude="59.571199999999997" longitude="17.951499999999999" name="U315" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/288"
+type="waypoint" latitude="59.570700000000002" longitude="17.964700000000001" name="U317" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/290"
+type="waypoint" latitude="59.341099999999997" longitude="17.691700000000001" name="U33" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/304"
+type="waypoint" latitude="59.605499999999999" longitude="18.030799999999999" name="U332" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/307"
+type="waypoint" latitude="59.598199999999999" longitude="18.091400000000000" name="U339" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/314"
+type="waypoint" latitude="59.605300000000000" longitude="18.098099999999999" name="U343" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/319"
+type="waypoint" latitude="59.604399999999998" longitude="18.098900000000000" name="U345" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/321"
+type="waypoint" latitude="59.621699999999997" longitude="18.167800000000000" name="U346" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/322"
+type="waypoint" latitude="59.654699999999998" longitude="18.146699999999999" name="U349" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/325"
+type="waypoint" latitude="59.691299999999998" longitude="18.108400000000000" name="U361" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/339"
+type="waypoint" latitude="59.691299999999998" longitude="18.108400000000000" name="U362" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/340"
+type="waypoint" latitude="59.694299999999998" longitude="18.116599999999998" name="U363" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/341"
+type="waypoint" latitude="59.691299999999998" longitude="18.108400000000000" name="U365" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/343"
+type="waypoint" latitude="59.691299999999998" longitude="18.108400000000000" name="U366" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/344"
+type="waypoint" latitude="59.710400000000000" longitude="18.122100000000000" name="U368" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/346"
+type="waypoint" latitude="59.731299999999997" longitude="18.026700000000002" name="U374" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/353"
+type="waypoint" latitude="59.704400000000000" longitude="17.999099999999999" name="U377" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/356"
+type="waypoint" latitude="59.618400000000001" longitude="17.721200000000000" name="U387" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/367"
+type="waypoint" latitude="59.356299999999997" longitude="17.693899999999999" name="U39" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/370"
+type="waypoint" latitude="59.593800000000002" longitude="17.892499999999998" name="U414" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/398"
+type="waypoint" latitude="59.573599999999999" longitude="17.843699999999998" name="U424" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/409"
+type="waypoint" latitude="59.593499999999999" longitude="17.904199999999999" name="U432" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/418"
+type="waypoint" latitude="59.601199999999999" longitude="17.801100000000002" name="U439" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/425"
+type="waypoint" latitude="59.664600000000000" longitude="17.851900000000001" name="U441" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/428"
+type="waypoint" latitude="59.635700000000000" longitude="17.815500000000000" name="U446" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/433"
+type="waypoint" latitude="59.635700000000000" longitude="17.815500000000000" name="U447" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/434"
+type="waypoint" latitude="59.401600000000002" longitude="17.568300000000001" name="U 12" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/440"
+type="waypoint" latitude="59.383099999999999" longitude="17.988900000000001" name="U 122" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/443"
+type="waypoint" latitude="59.344000000000001" longitude="18.016300000000001" name="U 123" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/444"
+type="waypoint" latitude="59.408900000000003" longitude="18.040700000000001" name="U 132" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/454"
+type="waypoint" latitude="59.477899999999998" longitude="18.040900000000001" name="U 138" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/460"
+type="waypoint" latitude="59.495699999999999" longitude="18.038799999999998" name="U 141" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/464"
+type="waypoint" latitude="59.460200000000000" longitude="18.010999999999999" name="U 149" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/472"
+type="waypoint" latitude="59.477800000000002" longitude="18.094700000000000" name="U 158" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/482"
+type="waypoint" latitude="59.284500000000001" longitude="17.724599999999999" name="U 16" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/484"
+type="waypoint" latitude="59.485100000000003" longitude="18.087700000000002" name="U 162" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/487"
+type="waypoint" latitude="59.465200000000003" longitude="18.197099999999999" name="U 168" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/493"
+type="waypoint" latitude="59.388900000000000" longitude="18.291200000000000" name="U 170" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/496"
+type="waypoint" latitude="59.507599999999996" longitude="18.283999999999999" name="U 174" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/500"
+type="waypoint" latitude="59.485300000000002" longitude="18.299099999999999" name="U 176" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/502"
+type="waypoint" latitude="59.531399999999998" longitude="18.073799999999999" name="U217" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/508"
+type="waypoint" latitude="59.531399999999998" longitude="18.073799999999999" name="U222" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/514"
+type="waypoint" latitude="59.531399999999998" longitude="18.073799999999999" name="U223" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/515"
+type="waypoint" latitude="59.532499999999999" longitude="18.075900000000001" name="U224" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/516"
+type="waypoint" latitude="59.553600000000003" longitude="18.153800000000000" name="U234" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/527"
+type="waypoint" latitude="59.560699999999997" longitude="18.082000000000001" name="U243" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/537"
+type="waypoint" latitude="59.554499999999997" longitude="17.994700000000002" name="U245" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/539"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="U262" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/558"
+type="waypoint" latitude="59.518000000000001" longitude="18.001999999999999" name="U270" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/567"
+type="waypoint" latitude="59.532800000000002" longitude="17.949900000000000" name="U274" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/571"
+type="waypoint" latitude="59.641900000000000" longitude="17.823000000000000" name="U451" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/575"
+type="waypoint" latitude="59.641900000000000" longitude="17.823000000000000" name="U452" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/576"
+type="waypoint" latitude="59.753100000000003" longitude="18.068999999999999" name="U498" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/594"
+type="waypoint" latitude="59.644399999999997" longitude="18.242599999999999" name="U506" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/604"
+type="waypoint" latitude="59.327399999999997" longitude="17.878100000000000" name="U51" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/608"
+type="waypoint" latitude="59.749200000000002" longitude="18.389600000000002" name="U516" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/615"
+type="waypoint" latitude="59.733899999999998" longitude="18.443899999999999" name="U520" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/620"
+type="waypoint" latitude="59.683399999999999" longitude="18.608699999999999" name="U521" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/621"
+type="waypoint" latitude="59.739800000000002" longitude="18.696999999999999" name="U528" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/628"
+type="waypoint" latitude="59.757700000000000" longitude="18.702999999999999" name="U530" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/631"
+type="waypoint" latitude="59.324599999999997" longitude="18.064000000000000" name="U54" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/640"
+type="waypoint" latitude="59.357300000000002" longitude="17.936499999999999" name="U55" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/641"
+type="waypoint" latitude="59.792400000000001" longitude="18.633900000000001" name="U565" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/649"
+type="waypoint" latitude="59.807400000000001" longitude="18.562000000000001" name="U568" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/652"
+type="waypoint" latitude="59.818399999999997" longitude="18.649300000000000" name="U577" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/662"
+type="waypoint" latitude="59.825099999999999" longitude="18.678599999999999" name="U578" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/663"
+type="waypoint" latitude="59.884300000000003" longitude="18.701499999999999" name="U582" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/668"
+type="waypoint" latitude="59.907200000000003" longitude="18.703499999999998" name="U585" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/671"
+type="waypoint" latitude="59.474299999999999" longitude="17.787400000000002" name="U605" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/682"
+type="waypoint" latitude="59.533600000000000" longitude="17.766999999999999" name="U606" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/683"
+type="waypoint" latitude="59.534799999999997" longitude="17.765300000000000" name="U609" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/686"
+type="waypoint" latitude="59.547699999999999" longitude="17.741299999999999" name="U615" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/693"
+type="waypoint" latitude="59.371499999999997" longitude="17.903700000000001" name="U70" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/713"
+type="waypoint" latitude="59.398800000000001" longitude="17.820900000000002" name="U87" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/727"
+type="waypoint" latitude="59.405900000000003" longitude="17.858300000000000" name="U93" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/734"
+type="waypoint" latitude="59.479399999999998" longitude="17.919200000000000" name="U97" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/738"
+type="waypoint" latitude="59.486800000000002" longitude="17.933800000000002" name="U98" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/739"
+type="waypoint" latitude="59.740200000000002" longitude="18.529800000000002" name="U542" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/788"
+type="waypoint" latitude="59.743000000000002" longitude="18.528300000000002" name="U557" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/803"
+type="waypointlistend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=In church
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30.000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#ffff00
+wptextcolor=#ffffff
+wpbgcolor=#ffff00
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=
+metadataauthor=
+metadatatime=2018-02-07T21:10:43.275708Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypoint" latitude="59.238199999999999" longitude="17.817499999999999" name="Sö 284" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/70"
+type="waypoint" latitude="59.237699999999997" longitude="17.816600000000001" name="Sö 285" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/71"
+type="waypoint" latitude="59.238999999999997" longitude="17.818000000000001" name="Sö 286" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/72"
+type="waypoint" latitude="59.143500000000003" longitude="17.786600000000000" name="Sö 291" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/77"
+type="waypoint" latitude="59.195799999999998" longitude="17.441299999999998" name="Sö 338" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/100"
+type="waypoint" latitude="59.158700000000003" longitude="17.602200000000000" name="Sö 343" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/105"
+type="waypoint" latitude="59.075899999999997" longitude="17.617000000000001" name="Sö 345" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/107"
+type="waypoint" latitude="59.087400000000002" longitude="17.565300000000001" name="Sö 351" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/113"
+type="waypoint" latitude="59.359900000000003" longitude="17.531400000000001" name="U 1" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/133"
+type="waypoint" latitude="59.359900000000003" longitude="17.531400000000001" name="U 10" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/134"
+type="waypoint" latitude="59.507899999999999" longitude="17.868200000000002" name="U 104" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/142"
+type="waypoint" latitude="59.630600000000001" longitude="18.519900000000000" name="U 179" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/171"
+type="waypoint" latitude="59.562199999999997" longitude="18.254000000000001" name="U 180" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/173"
+type="waypoint" latitude="59.562199999999997" longitude="18.254000000000001" name="U 181" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/174"
+type="waypoint" latitude="59.562199999999997" longitude="18.254000000000001" name="U 182" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/175"
+type="waypoint" latitude="59.558199999999999" longitude="18.241700000000002" name="U 183" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/176"
+type="waypoint" latitude="59.558199999999999" longitude="18.241700000000002" name="U 184" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/177"
+type="waypoint" latitude="59.390999999999998" longitude="17.655799999999999" name="U 20" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/194"
+type="waypoint" latitude="59.536799999999999" longitude="18.168199999999999" name="U201" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/196"
+type="waypoint" latitude="59.536799999999999" longitude="18.168199999999999" name="U202" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/197"
+type="waypoint" latitude="59.536799999999999" longitude="18.168199999999999" name="U203" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/198"
+type="waypoint" latitude="59.536799999999999" longitude="18.168199999999999" name="U204" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/199"
+type="waypoint" latitude="59.581099999999999" longitude="17.948599999999999" name="U Fv1953;270" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/215"
+type="waypoint" latitude="59.558199999999999" longitude="18.241700000000002" name="U Fv1971;213" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/221"
+type="waypoint" latitude="59.558199999999999" longitude="18.241700000000002" name="U Fv1972;272" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/226"
+type="waypoint" latitude="59.623199999999997" longitude="17.609300000000001" name="U655" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/233"
+type="waypoint" latitude="59.623300000000000" longitude="17.610099999999999" name="U658" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/236"
+type="waypoint" latitude="59.623300000000000" longitude="17.610099999999999" name="U660" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/238"
+type="waypoint" latitude="59.577800000000003" longitude="18.205900000000000" name="U Fv1971;212" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/251"
+type="waypoint" latitude="59.581099999999999" longitude="17.948599999999999" name="U295" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/265"
+type="waypoint" latitude="59.581099999999999" longitude="17.948599999999999" name="U296" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/266"
+type="waypoint" latitude="59.581099999999999" longitude="17.948599999999999" name="U297" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/267"
+type="waypoint" latitude="59.581099999999999" longitude="17.948699999999999" name="U302" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/274"
+type="waypoint" latitude="59.581099999999999" longitude="17.948699999999999" name="U303" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/275"
+type="waypoint" latitude="59.606600000000000" longitude="18.050000000000001" name="U325" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/299"
+type="waypoint" latitude="59.604799999999997" longitude="18.109500000000001" name="U335" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/310"
+type="waypoint" latitude="59.604399999999998" longitude="18.109000000000002" name="U336" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/311"
+type="waypoint" latitude="59.604599999999998" longitude="18.109100000000002" name="U344" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/320"
+type="waypoint" latitude="59.666800000000002" longitude="18.046900000000001" name="U353" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/330"
+type="waypoint" latitude="59.666899999999998" longitude="18.046900000000001" name="U354" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/331"
+type="waypoint" latitude="59.666800000000002" longitude="18.046900000000001" name="U355" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/332"
+type="waypoint" latitude="59.708900000000000" longitude="18.092900000000000" name="U357" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/334"
+type="waypoint" latitude="59.708900000000000" longitude="18.092900000000000" name="U358" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/335"
+type="waypoint" latitude="59.708900000000000" longitude="18.092900000000000" name="U367" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/345"
+type="waypoint" latitude="59.711199999999998" longitude="18.005400000000002" name="U376" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/355"
+type="waypoint" latitude="59.618000000000002" longitude="17.722799999999999" name="U379" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/358"
+type="waypoint" latitude="59.272500000000001" longitude="17.748000000000001" name="U405" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/388"
+type="waypoint" latitude="59.593800000000002" longitude="17.892499999999998" name="U413" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/397"
+type="waypoint" latitude="59.593800000000002" longitude="17.892499999999998" name="U415" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/399"
+type="waypoint" latitude="59.593800000000002" longitude="17.892499999999998" name="U416" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/400"
+type="waypoint" latitude="59.773299999999999" longitude="17.902999999999999" name="U430" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/416"
+type="waypoint" latitude="59.773299999999999" longitude="17.903700000000001" name="U431" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/417"
+type="waypoint" latitude="59.639899999999997" longitude="17.882500000000000" name="U433" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/419"
+type="waypoint" latitude="59.639899999999997" longitude="17.882500000000000" name="U434" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/420"
+type="waypoint" latitude="59.639899999999997" longitude="17.882500000000000" name="U435" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/421"
+type="waypoint" latitude="59.665799999999997" longitude="17.850300000000001" name="U440" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/427"
+type="waypoint" latitude="59.351900000000001" longitude="18.031700000000001" name="U 120" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/441"
+type="waypoint" latitude="59.406999999999996" longitude="18.036700000000000" name="U 127" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/448"
+type="waypoint" latitude="59.406999999999996" longitude="18.036700000000000" name="U 128" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/449"
+type="waypoint" latitude="59.406999999999996" longitude="18.036700000000000" name="U 129" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/450"
+type="waypoint" latitude="59.490600000000001" longitude="18.055900000000001" name="U 133" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/455"
+type="waypoint" latitude="59.272500000000001" longitude="17.748000000000001" name="U 15" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/473"
+type="waypoint" latitude="59.448500000000003" longitude="18.195900000000002" name="U 166" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/491"
+type="waypoint" latitude="59.448500000000003" longitude="18.195900000000002" name="U 167" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/492"
+type="waypoint" latitude="59.507599999999996" longitude="18.283999999999999" name="U 175" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/501"
+type="waypoint" latitude="59.531399999999998" longitude="18.073799999999999" name="U214" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/505"
+type="waypoint" latitude="59.531399999999998" longitude="18.073599999999999" name="U219" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/510"
+type="waypoint" latitude="59.390500000000003" longitude="17.702400000000001" name=" U 23" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/522"
+type="waypoint" latitude="59.577800000000003" longitude="18.205900000000000" name="U235" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/528"
+type="waypoint" latitude="59.390500000000003" longitude="17.702400000000001" name="U24" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/533"
+type="waypoint" latitude="59.390500000000003" longitude="17.702400000000001" name="U25" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/544"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="U252" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/547"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="U253" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/548"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="U254" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/549"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="U255" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/550"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="U256" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/551"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="U257" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/552"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="U258" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/553"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="U259" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/554"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="U260" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/556"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="U261" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/557"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="U263" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/559"
+type="waypoint" latitude="59.537700000000001" longitude="17.922799999999999" name="U272" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/569"
+type="waypoint" latitude="59.321199999999997" longitude="17.839800000000000" name="U46" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/584"
+type="waypoint" latitude="59.320900000000002" longitude="17.839800000000000" name="U47" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/587"
+type="waypoint" latitude="59.320799999999998" longitude="17.840499999999999" name="U48" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/588"
+type="waypoint" latitude="59.750799999999998" longitude="18.017299999999999" name="U494" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/590"
+type="waypoint" latitude="59.750799999999998" longitude="18.017299999999999" name="U495" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/591"
+type="waypoint" latitude="59.321300000000001" longitude="17.839800000000000" name="U50" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/597"
+type="waypoint" latitude="59.693500000000000" longitude="18.135200000000001" name="U501" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/599"
+type="waypoint" latitude="59.652600000000000" longitude="18.240600000000001" name="U505" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/603"
+type="waypoint" latitude="59.749200000000002" longitude="18.389600000000002" name="U513" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/612"
+type="waypoint" latitude="59.749099999999999" longitude="18.390699999999999" name="U514" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/613"
+type="waypoint" latitude="59.749200000000002" longitude="18.389600000000002" name="U515" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/614"
+type="waypoint" latitude="59.732799999999997" longitude="18.501600000000000" name="U517" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/616"
+type="waypoint" latitude="59.741700000000002" longitude="18.674900000000001" name="U526" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/626"
+type="waypoint" latitude="59.741700000000002" longitude="18.674900000000001" name="U527" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/627"
+type="waypoint" latitude="59.829700000000003" longitude="18.736799999999999" name="U532" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/633"
+type="waypoint" latitude="59.829700000000003" longitude="18.736799999999999" name="U533" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/634"
+type="waypoint" latitude="59.829700000000003" longitude="18.736799999999999" name="U534" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/635"
+type="waypoint" latitude="59.829700000000003" longitude="18.736799999999999" name="U536" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/637"
+type="waypoint" latitude="59.770299999999999" longitude="18.640000000000001" name="U559" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/642"
+type="waypoint" latitude="59.770299999999999" longitude="18.640000000000001" name="U560" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/644"
+type="waypoint" latitude="59.770299999999999" longitude="18.640000000000001" name="U561" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/645"
+type="waypoint" latitude="59.770299999999999" longitude="18.640000000000001" name="U562" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/646"
+type="waypoint" latitude="59.770299999999999" longitude="18.640000000000001" name="U563" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/647"
+type="waypoint" latitude="59.807099999999998" longitude="18.559699999999999" name="U567" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/651"
+type="waypoint" latitude="59.818399999999997" longitude="18.649300000000000" name="U574" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/659"
+type="waypoint" latitude="59.818399999999997" longitude="18.649300000000000" name="U575" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/660"
+type="waypoint" latitude="59.818399999999997" longitude="18.649300000000000" name="U576" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/661"
+type="waypoint" latitude="59.533700000000003" longitude="17.766800000000000" name="U608" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/685"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U61" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/687"
+type="waypoint" latitude="59.506000000000000" longitude="17.626600000000000" name="U618" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/696"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U62" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/698"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U63" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/705"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U64" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/706"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U65" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/707"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U67" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/709"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U68" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/710"
+type="waypoint" latitude="59.466600000000000" longitude="17.919000000000000" name="U94" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/735"
+type="waypoint" latitude="59.466600000000000" longitude="17.919000000000000" name="U95" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/736"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U Fv1953;266" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/743"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U Fv1953;268" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/744"
+type="waypoint" latitude="59.466600000000000" longitude="17.919000000000000" name="U Fv1968;279" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/749"
+type="waypoint" latitude="59.272500000000001" longitude="17.748000000000001" name="U Fv1990;32A" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/751"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="U Fv1959;255" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/760"
+type="waypoint" latitude="59.537399999999998" longitude="17.923500000000001" name="U Fv1959;196" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/761"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U NOR1998;27A" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/766"
+type="waypoint" latitude="59.740200000000002" longitude="18.529900000000001" name="U539" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/780"
+type="waypoint" latitude="59.507551300000003" longitude="17.868319000000000" name="U ATA5735/59" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/782"
+type="waypoint" latitude="59.740200000000002" longitude="18.530000000000001" name="U540" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/786"
+type="waypoint" latitude="59.740200000000002" longitude="18.530100000000001" name="u541" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/787"
+type="waypoint" latitude="59.740299999999998" longitude="18.529800000000002" name="U545" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/790"
+type="waypoint" latitude="59.740299999999998" longitude="18.529800000000002" name="U544" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/791"
+type="waypoint" latitude="59.740299999999998" longitude="18.529800000000002" name="U546" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/792"
+type="waypoint" latitude="59.740400000000001" longitude="18.529800000000002" name="U547" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/793"
+type="waypoint" latitude="59.740200000000002" longitude="18.529800000000002" name="U549" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/795"
+type="waypoint" latitude="59.740200000000002" longitude="18.529800000000002" name="U550" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/796"
+type="waypoint" latitude="59.740200000000002" longitude="18.529800000000002" name="U551" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/797"
+type="waypoint" latitude="59.740200000000002" longitude="18.529900000000001" name="U555" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/801"
+type="waypoint" latitude="59.581099999999999" longitude="17.948599999999999" name="U Fv1953;274" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/804"
+type="waypointlistend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=In museum
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30.000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#0000ff
+wptextcolor=#ffffff
+wpbgcolor=#0000ff
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=
+metadataauthor=
+metadatatime=2018-02-07T21:12:59.391514Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypoint" latitude="59.325600000000001" longitude="18.071300000000001" name="Sö 274" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/67"
+type="waypoint" latitude="59.183900000000001" longitude="17.664700000000000" name="Sö 307" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/93"
+type="waypoint" latitude="59.201200000000000" longitude="17.646400000000000" name="Sö 309" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/95"
+type="waypoint" latitude="59.212400000000002" longitude="17.407100000000000" name="Sö 340" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/102"
+type="waypoint" latitude="59.070200000000000" longitude="17.573100000000000" name="Sö 383" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/120"
+type="waypoint" latitude="59.577800000000003" longitude="18.205900000000000" name="U 198" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/191"
+type="waypoint" latitude="59.618400000000001" longitude="17.722200000000001" name="U382" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/362"
+type="waypoint" latitude="59.617500000000000" longitude="17.727599999999999" name="U384" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/364"
+type="waypoint" latitude="59.618400000000001" longitude="17.721200000000000" name="U386" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/366"
+type="waypoint" latitude="59.618899999999996" longitude="17.723299999999998" name="U388" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/368"
+type="waypoint" latitude="59.616999999999997" longitude="17.720099999999999" name="U389" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/369"
+type="waypoint" latitude="59.616300000000003" longitude="17.713999999999999" name="U395" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/376"
+type="waypoint" latitude="59.616300000000003" longitude="17.713999999999999" name="U397" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/378"
+type="waypoint" latitude="59.616300000000003" longitude="17.713999999999999" name="U398" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/379"
+type="waypoint" latitude="59.616300000000003" longitude="17.713999999999999" name="U399" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/380"
+type="waypoint" latitude="59.332799999999999" longitude="17.544100000000000" name="U4" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/381"
+type="waypoint" latitude="59.615400000000001" longitude="17.720800000000001" name="U401" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/384"
+type="waypoint" latitude="59.615800000000000" longitude="17.721299999999999" name="U403" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/386"
+type="waypoint" latitude="59.614899999999999" longitude="17.720400000000001" name="U404" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/387"
+type="waypoint" latitude="59.387599999999999" longitude="17.990900000000000" name="U 126" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/447"
+type="waypoint" latitude="59.476900000000001" longitude="18.093800000000002" name="U 159" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/483"
+type="waypoint" latitude="59.531399999999998" longitude="18.073799999999999" name="U215" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/506"
+type="waypoint" latitude="59.335700000000003" longitude="17.547300000000000" name="U5" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/596"
+type="waypoint" latitude="59.807400000000001" longitude="18.562000000000001" name="U569" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/653"
+type="waypoint" latitude="59.339900000000000" longitude="17.945499999999999" name="U57" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/654"
+type="waypoint" latitude="59.335299999999997" longitude="17.555700000000002" name="U6" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/679"
+type="waypoint" latitude="59.574199999999998" longitude="17.767099999999999" name="U613" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/691"
+type="waypoint" latitude="59.574399999999997" longitude="17.766900000000000" name="U614" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/692"
+type="waypoint" latitude="59.335299999999997" longitude="17.555700000000002" name="U7" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/712"
+type="waypoint" latitude="59.408600000000000" longitude="17.938600000000001" name="U76" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/718"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U78" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/720"
+type="waypoint" latitude="59.335299999999997" longitude="17.555700000000002" name="U8" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/722"
+type="waypoint" latitude="59.376800000000003" longitude="17.814100000000000" name="U85" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/725"
+type="waypoint" latitude="59.617199999999997" longitude="17.722300000000001" name="U NOR1996;18F" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/764"
+type="waypoint" latitude="59.807400000000001" longitude="18.562000000000001" name="U 569" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/775"
+type="waypoint" latitude="59.740299999999998" longitude="18.529900000000001" name="U556" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/802"
+type="waypointlistend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=Alive
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=1
+drawdirections=f
+trkdirectionsize=5
+drawpoints=t
+trkpointsize=2
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30.000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#00ff00
+wptextcolor=#ffffff
+wpbgcolor=#00ff00
+wpbgand=f
+wpsymbol=0
+wpsize=4
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=
+metadataauthor=
+metadatatime=2018-02-07T21:08:47.457142Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypoint" latitude="59.010800000000003" longitude="17.517800000000001" name="Sö 19" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/1"
+type="waypoint" latitude="59.250000000000000" longitude="17.491299999999999" name="Sö 190" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/2"
+type="waypoint" latitude="59.039000000000001" longitude="17.555800000000001" name="Sö 20" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/3"
+type="waypoint" latitude="59.016500000000001" longitude="17.810600000000001" name="Sö 216" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/6"
+type="waypoint" latitude="58.995699999999999" longitude="17.819900000000001" name="Sö 217" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/7"
+type="waypoint" latitude="59.036299999999997" longitude="17.806600000000000" name="Sö 218" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/8"
+type="waypoint" latitude="58.986300000000000" longitude="17.843699999999998" name="Sö 219" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/9"
+type="waypoint" latitude="58.998899999999999" longitude="17.665199999999999" name="Sö 22" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/10"
+type="waypoint" latitude="58.986800000000002" longitude="17.843699999999998" name="Sö 220" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/11"
+type="waypoint" latitude="58.986300000000000" longitude="17.844500000000000" name="Sö 221" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/12"
+type="waypoint" latitude="59.064100000000003" longitude="17.806400000000000" name="Sö 222" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/13"
+type="waypoint" latitude="59.015300000000003" longitude="17.885400000000001" name="Sö 224" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/15"
+type="waypoint" latitude="59.015700000000002" longitude="17.885500000000000" name="Sö 225" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/16"
+type="waypoint" latitude="59.083799999999997" longitude="17.812799999999999" name="Sö 226" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/17"
+type="waypoint" latitude="58.988900000000001" longitude="17.791599999999999" name="Sö 227" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/18"
+type="waypoint" latitude="59.024400000000000" longitude="17.821500000000000" name="Sö 229" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/20"
+type="waypoint" latitude="59.015400000000000" longitude="17.819299999999998" name="Sö 230" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/22"
+type="waypoint" latitude="59.043900000000001" longitude="17.892399999999999" name="Sö 231" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/23"
+type="waypoint" latitude="59.044800000000002" longitude="17.891600000000000" name="Sö 232" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/24"
+type="waypoint" latitude="59.045299999999997" longitude="17.890699999999999" name="Sö 233" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/25"
+type="waypoint" latitude="59.044400000000003" longitude="17.890699999999999" name="Sö 234" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/26"
+type="waypoint" latitude="59.085999999999999" longitude="17.900200000000002" name="Sö 235" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/27"
+type="waypoint" latitude="59.106800000000000" longitude="18.156400000000001" name="Sö 236" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/28"
+type="waypoint" latitude="59.103000000000002" longitude="18.115900000000000" name="Sö 237" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/29"
+type="waypoint" latitude="59.039299999999997" longitude="18.010600000000000" name="Sö 239" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/31"
+type="waypoint" latitude="59.118400000000001" longitude="18.109999999999999" name="Sö 240" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/33"
+type="waypoint" latitude="59.115099999999998" longitude="18.038200000000000" name="Sö 241" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/34"
+type="waypoint" latitude="59.092100000000002" longitude="18.073300000000000" name="Sö 242" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/35"
+type="waypoint" latitude="59.093000000000004" longitude="18.073399999999999" name="Sö 243" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/36"
+type="waypoint" latitude="59.105800000000002" longitude="18.060300000000002" name="Sö 244" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/37"
+type="waypoint" latitude="59.095399999999998" longitude="18.035100000000000" name="Sö 245" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/38"
+type="waypoint" latitude="59.105899999999998" longitude="18.053300000000000" name="Sö 246" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/39"
+type="waypoint" latitude="58.999099999999999" longitude="17.898399999999999" name="Sö 248" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/41"
+type="waypoint" latitude="58.995600000000003" longitude="17.936499999999999" name="Sö 249" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/42"
+type="waypoint" latitude="59.004300000000001" longitude="17.952700000000000" name="Sö 250" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/43"
+type="waypoint" latitude="58.960099999999997" longitude="17.856000000000002" name="Sö 251" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/44"
+type="waypoint" latitude="58.965100000000000" longitude="17.880700000000001" name="Sö 252" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/45"
+type="waypoint" latitude="58.974600000000002" longitude="17.874300000000002" name="Sö 254" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/47"
+type="waypoint" latitude="58.949100000000001" longitude="17.924900000000001" name="Sö 255" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/48"
+type="waypoint" latitude="58.957700000000003" longitude="17.895900000000001" name="Sö 256" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/49"
+type="waypoint" latitude="58.957599999999999" longitude="17.896699999999999" name="Sö 258" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/51"
+type="waypoint" latitude="59.135100000000001" longitude="18.177499999999998" name="Sö 259" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/52"
+type="waypoint" latitude="59.111899999999999" longitude="18.168900000000001" name="Sö 260" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/53"
+type="waypoint" latitude="59.111800000000002" longitude="18.172400000000000" name="Sö 261" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/54"
+type="waypoint" latitude="59.106299999999997" longitude="18.191500000000001" name="Sö 262" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/55"
+type="waypoint" latitude="59.132800000000003" longitude="18.158100000000001" name="Sö 264" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/57"
+type="waypoint" latitude="59.143599999999999" longitude="18.206099999999999" name="Sö 265" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/58"
+type="waypoint" latitude="59.134999999999998" longitude="18.181000000000001" name="Sö 266" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/59"
+type="waypoint" latitude="59.183100000000003" longitude="18.156300000000002" name="Sö 268" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/61"
+type="waypoint" latitude="59.167200000000001" longitude="18.139500000000002" name="Sö 269" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/62"
+type="waypoint" latitude="59.168199999999999" longitude="18.235800000000001" name="Sö 270" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/63"
+type="waypoint" latitude="59.187600000000003" longitude="18.156600000000001" name="Sö 272" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/65"
+type="waypoint" latitude="59.131300000000003" longitude="18.191199999999998" name="Sö 273" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/66"
+type="waypoint" latitude="59.238599999999998" longitude="17.816600000000001" name="Sö 283" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/69"
+type="waypoint" latitude="59.222099999999998" longitude="17.832100000000001" name="Sö 288" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/74"
+type="waypoint" latitude="59.187500000000000" longitude="17.899400000000000" name="Sö 289" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/75"
+type="waypoint" latitude="59.238300000000002" longitude="18.082999999999998" name="Sö 290" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/76"
+type="waypoint" latitude="59.095199999999998" longitude="17.888500000000001" name="Sö 292" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/78"
+type="waypoint" latitude="59.119100000000003" longitude="17.731100000000001" name="Sö 293" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/79"
+type="waypoint" latitude="59.166699999999999" longitude="17.730200000000000" name="Sö 296" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/82"
+type="waypoint" latitude="59.131000000000000" longitude="17.834800000000001" name="Sö 297" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/83"
+type="waypoint" latitude="59.129800000000003" longitude="17.913300000000000" name="Sö 298" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/84"
+type="waypoint" latitude="59.248899999999999" longitude="17.985600000000002" name="Sö 299" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/85"
+type="waypoint" latitude="59.233899999999998" longitude="17.914500000000000" name="Sö 300" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/86"
+type="waypoint" latitude="59.228600000000000" longitude="18.071899999999999" name="Sö 301" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/87"
+type="waypoint" latitude="59.252800000000001" longitude="17.678999999999998" name="Sö 302" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/88"
+type="waypoint" latitude="59.246699999999997" longitude="17.727699999999999" name="Sö 303" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/89"
+type="waypoint" latitude="59.233699999999999" longitude="17.693700000000000" name="Sö 304" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/90"
+type="waypoint" latitude="59.202500000000001" longitude="17.800500000000000" name="Sö 305" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/91"
+type="waypoint" latitude="59.217199999999998" longitude="17.778600000000001" name="Sö 306" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/92"
+type="waypoint" latitude="59.193399999999997" longitude="17.625000000000000" name="Sö 308" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/94"
+type="waypoint" latitude="59.192100000000003" longitude="17.586400000000001" name="Sö 311" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/97"
+type="waypoint" latitude="59.192599999999999" longitude="17.586400000000001" name="Sö 312" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/98"
+type="waypoint" latitude="59.192599999999999" longitude="17.586400000000001" name="Sö 313" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/99"
+type="waypoint" latitude="59.238700000000001" longitude="17.594100000000001" name="Sö 344" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/106"
+type="waypoint" latitude="59.114699999999999" longitude="17.601600000000001" name="Sö 346" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/108"
+type="waypoint" latitude="59.171199999999999" longitude="17.604600000000001" name="Sö 347" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/109"
+type="waypoint" latitude="59.059199999999997" longitude="17.591699999999999" name="Sö 348" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/110"
+type="waypoint" latitude="59.063600000000001" longitude="17.598900000000000" name="Sö 349" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/111"
+type="waypoint" latitude="59.111199999999997" longitude="17.660799999999998" name="Sö 350" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/112"
+type="waypoint" latitude="59.064700000000002" longitude="17.585000000000001" name="Sö 352" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/114"
+type="waypoint" latitude="59.090299999999999" longitude="17.547999999999998" name="Sö 353" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/115"
+type="waypoint" latitude="59.179299999999998" longitude="18.065100000000001" name="Sö 378" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/116"
+type="waypoint" latitude="59.232799999999997" longitude="17.693999999999999" name="Sö 380" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/118"
+type="waypoint" latitude="59.234900000000003" longitude="17.676200000000001" name="Sö 381" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/119"
+type="waypoint" latitude="59.619199999999999" longitude="17.605100000000000" name="U661" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/122"
+type="waypoint" latitude="59.154389000000002" longitude="17.834438700000000" name="Sö Fv1954;20" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/123"
+type="waypoint" latitude="59.237017000000002" longitude="18.298518000000001" name="Sö Fv1971;207" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/124"
+type="waypoint" latitude="59.030650999999999" longitude="17.989148000000000" name="Sö Fv1948;298" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/125"
+type="waypoint" latitude="59.150399999999998" longitude="18.180299999999999" name="Sö SB1965;19" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/126"
+type="waypoint" latitude="59.034266000000002" longitude="17.542269999999998" name="Sö Fv1979;239" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/127"
+type="waypoint" latitude="59.127800000000001" longitude="18.133299999999998" name="Sö Fv1959;262" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/128"
+type="waypoint" latitude="59.198799999999999" longitude="17.627400000000002" name="Sö Fv1984;254" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/130"
+type="waypoint" latitude="59.461100000000002" longitude="17.959900000000001" name="U 100" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/135"
+type="waypoint" latitude="59.448599999999999" longitude="17.983799999999999" name="U 101" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/136"
+type="waypoint" latitude="59.408400000000000" longitude="17.870699999999999" name="U83" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/138"
+type="waypoint" latitude="59.405900000000003" longitude="17.859500000000001" name="U84" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/139"
+type="waypoint" latitude="59.454500000000003" longitude="17.901199999999999" name="U 102" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/140"
+type="waypoint" latitude="59.467100000000002" longitude="17.926900000000000" name="U 103" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/141"
+type="waypoint" latitude="59.507899999999999" longitude="17.868200000000002" name="U 105" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/143"
+type="waypoint" latitude="59.512700000000002" longitude="17.886500000000002" name="U 106" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/144"
+type="waypoint" latitude="59.494399999999999" longitude="17.888900000000000" name="U 107" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/145"
+type="waypoint" latitude="59.494000000000000" longitude="17.880400000000002" name="U 108" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/146"
+type="waypoint" latitude="59.360100000000003" longitude="17.534300000000002" name="U 11" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/148"
+type="waypoint" latitude="59.493099999999998" longitude="17.882200000000001" name="U 110" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/149"
+type="waypoint" latitude="59.503000000000000" longitude="17.867999999999999" name="U 112" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/151"
+type="waypoint" latitude="59.524900000000002" longitude="17.900400000000001" name="U 114" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/153"
+type="waypoint" latitude="59.519399999999997" longitude="17.894100000000002" name="U 115" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/155"
+type="waypoint" latitude="59.502699999999997" longitude="17.898900000000001" name="U 116" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/156"
+type="waypoint" latitude="59.502699999999997" longitude="17.898900000000001" name="U 117" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/157"
+type="waypoint" latitude="59.528599999999997" longitude="17.924900000000001" name="U277" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/158"
+type="waypoint" latitude="59.540100000000002" longitude="17.966999999999999" name="U278" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/159"
+type="waypoint" latitude="59.529899999999998" longitude="17.933299999999999" name="U279" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/160"
+type="waypoint" latitude="59.390500000000003" longitude="17.702400000000001" name="U28" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/161"
+type="waypoint" latitude="59.507500000000000" longitude="17.904199999999999" name="U280" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/162"
+type="waypoint" latitude="59.507500000000000" longitude="17.904199999999999" name="U281" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/163"
+type="waypoint" latitude="59.556500000000000" longitude="17.937999999999999" name="U284" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/166"
+type="waypoint" latitude="59.553300000000000" longitude="17.930000000000000" name="U285" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/167"
+type="waypoint" latitude="59.552999999999997" longitude="17.922699999999999" name="U286" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/168"
+type="waypoint" latitude="59.564599999999999" longitude="18.620000000000001" name="U 177" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/169"
+type="waypoint" latitude="59.564599999999999" longitude="18.620000000000001" name="U 178" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/170"
+type="waypoint" latitude="59.289499999999997" longitude="17.607099999999999" name="U 18" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/172"
+type="waypoint" latitude="59.558199999999999" longitude="18.241700000000002" name="U 185" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/178"
+type="waypoint" latitude="59.563099999999999" longitude="18.266999999999999" name="U 186" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/179"
+type="waypoint" latitude="59.565899999999999" longitude="18.272700000000000" name="U 188" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/180"
+type="waypoint" latitude="59.287799999999997" longitude="17.715100000000000" name="U 19" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/182"
+type="waypoint" latitude="59.607399999999998" longitude="18.314200000000000" name="U 190" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/183"
+type="waypoint" latitude="59.523099999999999" longitude="18.254899999999999" name="U 192" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/185"
+type="waypoint" latitude="59.530600000000000" longitude="18.260899999999999" name="U 193" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/186"
+type="waypoint" latitude="59.521599999999999" longitude="18.239799999999999" name="U 194" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/187"
+type="waypoint" latitude="59.607500000000002" longitude="18.314200000000000" name="U 195" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/188"
+type="waypoint" latitude="59.577800000000003" longitude="18.205900000000000" name="U 197" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/190"
+type="waypoint" latitude="59.577800000000003" longitude="18.205900000000000" name="U 199" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/192"
+type="waypoint" latitude="59.600600000000000" longitude="18.210899999999999" name="U200" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/195"
+type="waypoint" latitude="59.521999999999998" longitude="18.167600000000000" name="U207" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/202"
+type="waypoint" latitude="59.521999999999998" longitude="18.167600000000000" name="U208" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/203"
+type="waypoint" latitude="59.514200000000002" longitude="18.158100000000001" name="U209" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/204"
+type="waypoint" latitude="59.390999999999998" longitude="17.655799999999999" name="U21" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/205"
+type="waypoint" latitude="59.536000000000001" longitude="18.145099999999999" name="U210" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/206"
+type="waypoint" latitude="59.531700000000001" longitude="18.075099999999999" name="U Fv1954;4" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/210"
+type="waypoint" latitude="59.581099999999999" longitude="17.948599999999999" name="U Fv1979;245" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/211"
+type="waypoint" latitude="59.572600000000001" longitude="17.851400000000002" name="U Fv1988;241" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/212"
+type="waypoint" latitude="59.672199999999997" longitude="18.050599999999999" name="U Fv1971;209" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/213"
+type="waypoint" latitude="59.581099999999999" longitude="17.948599999999999" name="U Fv1979;245" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/216"
+type="waypoint" latitude="59.524400000000000" longitude="17.899600000000000" name="U Fv1977;162" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/223"
+type="waypoint" latitude="59.390500000000003" longitude="17.702400000000001" name="U Fv1979;241" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/225"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/230"
+type="waypoint" latitude="59.507399999999997" longitude="17.868099999999998" name="U Fv1967;262" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/232"
+type="waypoint" latitude="59.628799999999998" longitude="17.593900000000001" name="U656" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/234"
+type="waypoint" latitude="59.630299999999998" longitude="17.538100000000000" name="U657" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/235"
+type="waypoint" latitude="59.632300000000001" longitude="17.568899999999999" name="U659" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/237"
+type="waypoint" latitude="59.623399999999997" longitude="17.651700000000002" name="U662" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/239"
+type="waypoint" latitude="59.621600000000001" longitude="17.650900000000000" name="U663" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/240"
+type="waypoint" latitude="59.647900000000000" longitude="17.544899999999998" name="U668" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/241"
+type="waypoint" latitude="59.588900000000002" longitude="17.652000000000001" name="U626" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/243"
+type="waypoint" latitude="59.600499999999997" longitude="17.692599999999999" name="U629" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/246"
+type="waypoint" latitude="59.584499999999998" longitude="17.643200000000000" name="U630" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/247"
+type="waypoint" latitude="58.965800000000002" longitude="17.863299999999999" name="Sö Fv1971;208" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/249"
+type="waypoint" latitude="59.577800000000003" longitude="18.205900000000000" name="U Fv1971;211" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/250"
+type="waypoint" latitude="59.506100000000004" longitude="17.627099999999999" name="U Fv1973;191" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/252"
+type="waypoint" latitude="59.301600000000001" longitude="17.403099999999998" name="Sö Fv1988;34" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/253"
+type="waypoint" latitude="59.539600000000000" longitude="17.916799999999999" name="U Fv1959;188" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/255"
+type="waypoint" latitude="59.538300000000000" longitude="17.933800000000002" name="U287" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/256"
+type="waypoint" latitude="59.535299999999999" longitude="17.932400000000001" name="U288" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/257"
+type="waypoint" latitude="59.531700000000001" longitude="17.931999999999999" name="U289" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/258"
+type="waypoint" latitude="59.388100000000001" longitude="17.704000000000001" name="U29" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/259"
+type="waypoint" latitude="59.533099999999997" longitude="17.930499999999999" name="U290" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/260"
+type="waypoint" latitude="59.534799999999997" longitude="17.936800000000002" name="U291" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/261"
+type="waypoint" latitude="59.521099999999997" longitude="17.913399999999999" name="U292" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/262"
+type="waypoint" latitude="59.514099999999999" longitude="17.905200000000001" name="U293" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/263"
+type="waypoint" latitude="59.512300000000003" longitude="17.906900000000000" name="U294" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/264"
+type="waypoint" latitude="59.581099999999999" longitude="17.948599999999999" name="U298" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/268"
+type="waypoint" latitude="59.581099999999999" longitude="17.948599999999999" name="U299" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/269"
+type="waypoint" latitude="59.360700000000001" longitude="17.535399999999999" name="U3" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/270"
+type="waypoint" latitude="59.386899999999997" longitude="17.685500000000001" name="U30" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/271"
+type="waypoint" latitude="59.611899999999999" longitude="17.956399999999999" name="U304" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/276"
+type="waypoint" latitude="59.599600000000002" longitude="17.963200000000001" name="U305" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/277"
+type="waypoint" latitude="59.576300000000003" longitude="17.961700000000000" name="U306" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/278"
+type="waypoint" latitude="59.585599999999999" longitude="17.947099999999999" name="U307" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/279"
+type="waypoint" latitude="59.584899999999998" longitude="17.946899999999999" name="U308" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/280"
+type="waypoint" latitude="59.571100000000001" longitude="17.947399999999998" name="U309" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/281"
+type="waypoint" latitude="59.409799999999997" longitude="17.709299999999999" name="U31" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/282"
+type="waypoint" latitude="59.571100000000001" longitude="17.947399999999998" name="U310" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/283"
+type="waypoint" latitude="59.571100000000001" longitude="17.947399999999998" name="U311" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/284"
+type="waypoint" latitude="59.568600000000004" longitude="17.954200000000000" name="U312" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/285"
+type="waypoint" latitude="59.571199999999997" longitude="17.954300000000000" name="U313" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/286"
+type="waypoint" latitude="59.565100000000001" longitude="17.952900000000000" name="U316" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/289"
+type="waypoint" latitude="59.565399999999997" longitude="17.947900000000001" name="U318" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/291"
+type="waypoint" latitude="59.609600000000000" longitude="17.993099999999998" name="U319" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/292"
+type="waypoint" latitude="59.340299999999999" longitude="17.694500000000001" name="U32" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/293"
+type="waypoint" latitude="59.611600000000003" longitude="17.989999999999998" name="U320" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/294"
+type="waypoint" latitude="59.594200000000001" longitude="17.966799999999999" name="U321" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/295"
+type="waypoint" latitude="59.610399999999998" longitude="17.974699999999999" name="U322" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/296"
+type="waypoint" latitude="59.581200000000003" longitude="17.940600000000000" name="U323" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/297"
+type="waypoint" latitude="59.609699999999997" longitude="17.994499999999999" name="U324" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/298"
+type="waypoint" latitude="59.598399999999998" longitude="18.047799999999999" name="U326" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/300"
+type="waypoint" latitude="59.606699999999996" longitude="18.026800000000001" name="U327" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/301"
+type="waypoint" latitude="59.587899999999998" longitude="18.035799999999998" name="U328" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/302"
+type="waypoint" latitude="59.611600000000003" longitude="18.035900000000002" name="U329" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/303"
+type="waypoint" latitude="59.611600000000003" longitude="18.035900000000002" name="U330" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/305"
+type="waypoint" latitude="59.611699999999999" longitude="18.042000000000002" name="U331" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/306"
+type="waypoint" latitude="59.604799999999997" longitude="18.109500000000001" name="U333" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/308"
+type="waypoint" latitude="59.604799999999997" longitude="18.109500000000001" name="U334" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/309"
+type="waypoint" latitude="59.595100000000002" longitude="18.098800000000001" name="U337" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/312"
+type="waypoint" latitude="59.597099999999998" longitude="18.091699999999999" name="U338" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/313"
+type="waypoint" latitude="59.348799999999997" longitude="17.717500000000001" name="U34" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/315"
+type="waypoint" latitude="59.605699999999999" longitude="18.116199999999999" name="U340" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/316"
+type="waypoint" latitude="59.596899999999998" longitude="18.109200000000001" name="U341" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/317"
+type="waypoint" latitude="59.594700000000003" longitude="18.105000000000000" name="U342" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/318"
+type="waypoint" latitude="59.630800000000001" longitude="18.184000000000001" name="U347" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/323"
+type="waypoint" latitude="59.630800000000001" longitude="18.184000000000001" name="U348" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/324"
+type="waypoint" latitude="59.363300000000002" longitude="17.732900000000001" name="U35" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/326"
+type="waypoint" latitude="59.602100000000000" longitude="18.139900000000001" name="U350" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/327"
+type="waypoint" latitude="59.602699999999999" longitude="18.139700000000001" name="U351" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/328"
+type="waypoint" latitude="59.658499999999997" longitude="18.141400000000001" name="U352" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/329"
+type="waypoint" latitude="59.656799999999997" longitude="18.048900000000000" name="U356" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/333"
+type="waypoint" latitude="59.708900000000000" longitude="18.092900000000000" name="U359" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/336"
+type="waypoint" latitude="59.349100000000000" longitude="17.719100000000001" name="U36" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/337"
+type="waypoint" latitude="59.695799999999998" longitude="18.116900000000001" name="U360" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/338"
+type="waypoint" latitude="59.693100000000001" longitude="18.108499999999999" name="U364" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/342"
+type="waypoint" latitude="59.710400000000000" longitude="18.122100000000000" name="U369" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/347"
+type="waypoint" latitude="59.374200000000002" longitude="17.672699999999999" name="U37" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/348"
+type="waypoint" latitude="59.687300000000000" longitude="18.040400000000002" name="U370" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/349"
+type="waypoint" latitude="59.686599999999999" longitude="18.129600000000000" name="U371" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/350"
+type="waypoint" latitude="59.720700000000001" longitude="18.058100000000000" name="U372" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/351"
+type="waypoint" latitude="59.687500000000000" longitude="18.023199999999999" name="U373" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/352"
+type="waypoint" latitude="59.710599999999999" longitude="18.004000000000001" name="U375" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/354"
+type="waypoint" latitude="59.700499999999998" longitude="17.978100000000001" name="U378" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/357"
+type="waypoint" latitude="59.374200000000002" longitude="17.672699999999999" name="U38" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/359"
+type="waypoint" latitude="59.618499999999997" longitude="17.721599999999999" name="U380" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/360"
+type="waypoint" latitude="59.618499999999997" longitude="17.721599999999999" name="U381" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/361"
+type="waypoint" latitude="59.618400000000001" longitude="17.722200000000001" name="U383" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/363"
+type="waypoint" latitude="59.618400000000001" longitude="17.721200000000000" name="U385" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/365"
+type="waypoint" latitude="59.616999999999997" longitude="17.720099999999999" name="U390" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/371"
+type="waypoint" latitude="59.616300000000003" longitude="17.717700000000001" name="U391" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/372"
+type="waypoint" latitude="59.616399999999999" longitude="17.716000000000001" name="U392" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/373"
+type="waypoint" latitude="59.616799999999998" longitude="17.716000000000001" name="U393" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/374"
+type="waypoint" latitude="59.616300000000003" longitude="17.713999999999999" name="U394" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/375"
+type="waypoint" latitude="59.616300000000003" longitude="17.713999999999999" name="U396" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/377"
+type="waypoint" latitude="59.317599999999999" longitude="17.745600000000000" name="U40" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/382"
+type="waypoint" latitude="59.616799999999998" longitude="17.715199999999999" name="U400" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/383"
+type="waypoint" latitude="59.615400000000001" longitude="17.720800000000001" name="U402" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/385"
+type="waypoint" latitude="59.616900000000001" longitude="17.715299999999999" name="U406" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/389"
+type="waypoint" latitude="59.651299999999999" longitude="17.641900000000000" name="U407" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/390"
+type="waypoint" latitude="59.651299999999999" longitude="17.641900000000000" name="U408" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/391"
+type="waypoint" latitude="59.645499999999998" longitude="17.746900000000000" name="U409" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/392"
+type="waypoint" latitude="59.349800000000002" longitude="17.771500000000000" name="U41" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/393"
+type="waypoint" latitude="59.624800000000000" longitude="17.751100000000001" name="U410" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/394"
+type="waypoint" latitude="59.624899999999997" longitude="17.747499999999999" name="U411" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/395"
+type="waypoint" latitude="59.630499999999998" longitude="17.738800000000001" name="U412" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/396"
+type="waypoint" latitude="59.593800000000002" longitude="17.892499999999998" name="U417" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/401"
+type="waypoint" latitude="59.611899999999999" longitude="17.864599999999999" name="U418" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/402"
+type="waypoint" latitude="59.600800000000000" longitude="17.882500000000000" name="U419" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/403"
+type="waypoint" latitude="59.321300000000001" longitude="17.769900000000000" name="U42" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/404"
+type="waypoint" latitude="59.572000000000003" longitude="17.845700000000001" name="U420" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/405"
+type="waypoint" latitude="59.572899999999997" longitude="17.829499999999999" name="U421" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/406"
+type="waypoint" latitude="59.574599999999997" longitude="17.844300000000000" name="U422" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/407"
+type="waypoint" latitude="59.572600000000001" longitude="17.851400000000002" name="U423" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/408"
+type="waypoint" latitude="59.573599999999999" longitude="17.843699999999998" name="U425" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/410"
+type="waypoint" latitude="59.557699999999997" longitude="17.896500000000000" name="U426" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/411"
+type="waypoint" latitude="59.577900000000000" longitude="17.898299999999999" name="U427" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/412"
+type="waypoint" latitude="59.587699999999998" longitude="17.882999999999999" name="U428" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/413"
+type="waypoint" latitude="59.588200000000001" longitude="17.918800000000001" name="U429" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/414"
+type="waypoint" latitude="59.596100000000000" longitude="17.744599999999998" name="U43" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/415"
+type="waypoint" latitude="59.630400000000002" longitude="17.849799999999998" name="U436" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/422"
+type="waypoint" latitude="59.632500000000000" longitude="17.880500000000001" name="U437" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/423"
+type="waypoint" latitude="59.600800000000000" longitude="17.801600000000001" name="U438" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/424"
+type="waypoint" latitude="59.328600000000002" longitude="17.729900000000001" name="U44" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/426"
+type="waypoint" latitude="59.663300000000000" longitude="17.847000000000001" name="U442" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/429"
+type="waypoint" latitude="59.665399999999998" longitude="17.848900000000000" name="U443" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/430"
+type="waypoint" latitude="59.657299999999999" longitude="17.818200000000001" name="U444" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/431"
+type="waypoint" latitude="59.657299999999999" longitude="17.818200000000001" name="U445" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/432"
+type="waypoint" latitude="59.680700000000002" longitude="17.864899999999999" name="U448" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/435"
+type="waypoint" latitude="59.680599999999998" longitude="17.864000000000001" name="U449" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/436"
+type="waypoint" latitude="59.326799999999999" longitude="17.737300000000001" name="U45" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/437"
+type="waypoint" latitude="59.504300000000001" longitude="17.891900000000000" name="U 118" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/438"
+type="waypoint" latitude="59.494399999999999" longitude="17.888900000000000" name="U 119" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/439"
+type="waypoint" latitude="59.366399999999999" longitude="18.019500000000001" name="U 121" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/442"
+type="waypoint" latitude="59.341900000000003" longitude="18.021899999999999" name="U 124" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/445"
+type="waypoint" latitude="59.348700000000001" longitude="18.019700000000000" name="U 125" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/446"
+type="waypoint" latitude="59.367100000000001" longitude="17.628100000000000" name="U 13" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/451"
+type="waypoint" latitude="59.405000000000001" longitude="18.022300000000001" name="U 130" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/452"
+type="waypoint" latitude="59.407699999999998" longitude="18.033200000000001" name="U 131" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/453"
+type="waypoint" latitude="59.407699999999998" longitude="18.033200000000001" name="U 134" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/456"
+type="waypoint" latitude="59.480600000000003" longitude="18.043900000000001" name="U 135" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/457"
+type="waypoint" latitude="59.480600000000003" longitude="18.043900000000001" name="U 136" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/458"
+type="waypoint" latitude="59.480600000000003" longitude="18.043900000000001" name="U 137" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/459"
+type="waypoint" latitude="59.480600000000003" longitude="18.043900000000001" name="U 139" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/461"
+type="waypoint" latitude="59.356699999999996" longitude="17.645099999999999" name="U 14" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/462"
+type="waypoint" latitude="59.480600000000003" longitude="18.043900000000001" name="U 140" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/463"
+type="waypoint" latitude="59.481699999999996" longitude="18.014600000000002" name="U 142" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/465"
+type="waypoint" latitude="59.468400000000003" longitude="18.016200000000001" name="U 143" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/466"
+type="waypoint" latitude="59.468000000000004" longitude="18.016600000000000" name="U 144" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/467"
+type="waypoint" latitude="59.480800000000002" longitude="18.015300000000000" name="U 145" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/468"
+type="waypoint" latitude="59.480800000000002" longitude="18.015300000000000" name="U 146" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/469"
+type="waypoint" latitude="59.455500000000001" longitude="17.998600000000000" name="U 147" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/470"
+type="waypoint" latitude="59.455399999999997" longitude="18.003399999999999" name="U 148" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/471"
+type="waypoint" latitude="59.482700000000001" longitude="18.048700000000000" name="U 150" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/474"
+type="waypoint" latitude="59.480600000000003" longitude="18.043900000000001" name="U 151" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/475"
+type="waypoint" latitude="59.473700000000001" longitude="18.021000000000001" name="U 152" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/476"
+type="waypoint" latitude="59.473700000000001" longitude="18.021000000000001" name="U 153" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/477"
+type="waypoint" latitude="59.473700000000001" longitude="18.021000000000001" name="U 154" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/478"
+type="waypoint" latitude="59.473700000000001" longitude="18.021000000000001" name="U 155" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/479"
+type="waypoint" latitude="59.473700000000001" longitude="18.021000000000001" name="U 156" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/480"
+type="waypoint" latitude="59.472499999999997" longitude="18.094400000000000" name="U 157" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/481"
+type="waypoint" latitude="59.508000000000003" longitude="18.011099999999999" name="U 160" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/485"
+type="waypoint" latitude="59.508000000000003" longitude="18.011099999999999" name="U 161" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/486"
+type="waypoint" latitude="59.477899999999998" longitude="18.033999999999999" name="U 163" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/488"
+type="waypoint" latitude="59.499600000000001" longitude="18.058199999999999" name="U 164" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/489"
+type="waypoint" latitude="59.499600000000001" longitude="18.058199999999999" name="U 165" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/490"
+type="waypoint" latitude="59.454000000000001" longitude="18.197500000000002" name="U 169" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/494"
+type="waypoint" latitude="59.313099999999999" longitude="17.675999999999998" name="U 17" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/495"
+type="waypoint" latitude="59.404100000000000" longitude="18.225700000000000" name="U 171" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/497"
+type="waypoint" latitude="59.371099999999998" longitude="18.140300000000000" name="U 172" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/498"
+type="waypoint" latitude="59.343600000000002" longitude="18.520299999999999" name="U 173" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/499"
+type="waypoint" latitude="59.531399999999998" longitude="18.073799999999999" name="U212" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/503"
+type="waypoint" latitude="59.531399999999998" longitude="18.073799999999999" name="U213" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/504"
+type="waypoint" latitude="59.531399999999998" longitude="18.073799999999999" name="U216" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/507"
+type="waypoint" latitude="59.531399999999998" longitude="18.073799999999999" name="U218" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/509"
+type="waypoint" latitude="59.387099999999997" longitude="17.643599999999999" name="U22" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/511"
+type="waypoint" latitude="59.531399999999998" longitude="18.073799999999999" name="U220" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/512"
+type="waypoint" latitude="59.530900000000003" longitude="18.074300000000001" name="U221" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/513"
+type="waypoint" latitude="59.516300000000001" longitude="18.053999999999998" name="U225" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/517"
+type="waypoint" latitude="59.516300000000001" longitude="18.053999999999998" name="U226" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/518"
+type="waypoint" latitude="59.542700000000004" longitude="17.993500000000001" name="U227" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/519"
+type="waypoint" latitude="59.574500000000000" longitude="17.995999999999999" name="U228" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/520"
+type="waypoint" latitude="59.528399999999998" longitude="18.004600000000000" name="U229" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/521"
+type="waypoint" latitude="59.524299999999997" longitude="18.002900000000000" name="U230" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/523"
+type="waypoint" latitude="59.531399999999998" longitude="18.007300000000001" name="U231" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/524"
+type="waypoint" latitude="59.530099999999997" longitude="18.006900000000002" name="U232" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/525"
+type="waypoint" latitude="59.554000000000002" longitude="18.154000000000000" name="U233" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/526"
+type="waypoint" latitude="59.543999999999997" longitude="18.034500000000001" name="U236" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/529"
+type="waypoint" latitude="59.544699999999999" longitude="18.036500000000000" name="U237" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/530"
+type="waypoint" latitude="59.556500000000000" longitude="18.012699999999999" name="U238" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/531"
+type="waypoint" latitude="59.543799999999997" longitude="18.039800000000000" name="U239" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/532"
+type="waypoint" latitude="59.545099999999998" longitude="18.133400000000002" name="U240" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/534"
+type="waypoint" latitude="59.545000000000002" longitude="18.129300000000001" name="U241" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/535"
+type="waypoint" latitude="59.545000000000002" longitude="18.129300000000001" name="U242" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/536"
+type="waypoint" latitude="59.553100000000001" longitude="17.990300000000001" name="U244" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/538"
+type="waypoint" latitude="59.552399999999999" longitude="17.992400000000000" name="U246" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/540"
+type="waypoint" latitude="59.559300000000000" longitude="17.994100000000000" name="U247" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/541"
+type="waypoint" latitude="59.545400000000001" longitude="17.985399999999998" name="U248" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/542"
+type="waypoint" latitude="59.543100000000003" longitude="17.982600000000001" name="U249" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/543"
+type="waypoint" latitude="59.540100000000002" longitude="18.112200000000001" name="U250" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/545"
+type="waypoint" latitude="59.542999999999999" longitude="18.021300000000000" name="U251" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/546"
+type="waypoint" latitude="59.390500000000003" longitude="17.702400000000001" name="U26" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/555"
+type="waypoint" latitude="59.517800000000001" longitude="17.956600000000002" name="U264" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/560"
+type="waypoint" latitude="59.518400000000000" longitude="17.975899999999999" name="U265" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/561"
+type="waypoint" latitude="59.523299999999999" longitude="17.967700000000001" name="U266" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/562"
+type="waypoint" latitude="59.504399999999997" longitude="17.984900000000000" name="U267" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/563"
+type="waypoint" latitude="59.504399999999997" longitude="17.984900000000000" name="U268" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/564"
+type="waypoint" latitude="59.506100000000004" longitude="17.978600000000000" name="U269" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/565"
+type="waypoint" latitude="59.390500000000003" longitude="17.702400000000001" name="U27" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/566"
+type="waypoint" latitude="59.514699999999998" longitude="18.006499999999999" name="U271" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/568"
+type="waypoint" latitude="59.537900000000000" longitude="17.924299999999999" name="U273" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/570"
+type="waypoint" latitude="59.527900000000002" longitude="17.940600000000000" name="U275" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/572"
+type="waypoint" latitude="59.539000000000001" longitude="17.925599999999999" name="U276" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/573"
+type="waypoint" latitude="59.680599999999998" longitude="17.864000000000001" name="U450" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/574"
+type="waypoint" latitude="59.651699999999998" longitude="17.836700000000000" name="U453" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/577"
+type="waypoint" latitude="59.651699999999998" longitude="17.836700000000000" name="U454" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/578"
+type="waypoint" latitude="59.634000000000000" longitude="17.798200000000001" name="U455" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/579"
+type="waypoint" latitude="59.646500000000003" longitude="17.855000000000000" name="U456" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/580"
+type="waypoint" latitude="59.681600000000003" longitude="17.710000000000001" name="U457" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/581"
+type="waypoint" latitude="59.683000000000000" longitude="17.699700000000000" name="U458" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/582"
+type="waypoint" latitude="59.683199999999999" longitude="17.719799999999999" name="U459" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/583"
+type="waypoint" latitude="59.682699999999997" longitude="17.718000000000000" name="U460" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/585"
+type="waypoint" latitude="59.678899999999999" longitude="17.694500000000001" name="U461" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/586"
+type="waypoint" latitude="59.321100000000001" longitude="17.839800000000000" name="U49" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/589"
+type="waypoint" latitude="59.744700000000002" longitude="18.038599999999999" name="U496" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/592"
+type="waypoint" latitude="59.742800000000003" longitude="18.037900000000000" name="U497" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/593"
+type="waypoint" latitude="59.740200000000002" longitude="18.163300000000000" name="U499" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/595"
+type="waypoint" latitude="59.727800000000002" longitude="18.211600000000001" name="U500" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/598"
+type="waypoint" latitude="59.692999999999998" longitude="18.190700000000000" name="U502" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/600"
+type="waypoint" latitude="59.690800000000003" longitude="18.233200000000000" name="U503" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/601"
+type="waypoint" latitude="59.691200000000002" longitude="18.241399999999999" name="U504" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/602"
+type="waypoint" latitude="59.652600000000000" longitude="18.240600000000001" name="U507" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/605"
+type="waypoint" latitude="59.667299999999997" longitude="18.242300000000000" name="U508" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/606"
+type="waypoint" latitude="59.658200000000001" longitude="18.345500000000001" name="U509" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/607"
+type="waypoint" latitude="59.637599999999999" longitude="18.233300000000000" name="U510" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/609"
+type="waypoint" latitude="59.640400000000000" longitude="18.228700000000000" name="U511" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/610"
+type="waypoint" latitude="59.736199999999997" longitude="18.263200000000001" name="U512" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/611"
+type="waypoint" latitude="59.695599999999999" longitude="18.474299999999999" name="U518" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/617"
+type="waypoint" latitude="59.735100000000003" longitude="18.450099999999999" name="U519" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/618"
+type="waypoint" latitude="59.305900000000001" longitude="17.864300000000000" name="U52" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/619"
+type="waypoint" latitude="59.662300000000002" longitude="18.689499999999999" name="U522" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/622"
+type="waypoint" latitude="59.662300000000002" longitude="18.689499999999999" name="U523" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/623"
+type="waypoint" latitude="59.679800000000000" longitude="18.682800000000000" name="U524" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/624"
+type="waypoint" latitude="59.690700000000000" longitude="18.566700000000001" name="U525" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/625"
+type="waypoint" latitude="59.718699999999998" longitude="18.702100000000002" name="U529" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/629"
+type="waypoint" latitude="59.324700000000000" longitude="18.070000000000000" name="U53" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/630"
+type="waypoint" latitude="59.745600000000003" longitude="18.706700000000001" name="U531" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/632"
+type="waypoint" latitude="59.829700000000003" longitude="18.736799999999999" name="U535" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/636"
+type="waypoint" latitude="59.869999999999997" longitude="18.780500000000000" name="U537" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/638"
+type="waypoint" latitude="59.855499999999999" longitude="18.757400000000001" name="U538" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/639"
+type="waypoint" latitude="59.347299999999997" longitude="17.946300000000001" name="U56" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/643"
+type="waypoint" latitude="59.778300000000002" longitude="18.640699999999999" name="U564" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/648"
+type="waypoint" latitude="59.780799999999999" longitude="18.624300000000002" name="U566" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/650"
+type="waypoint" latitude="59.786799999999999" longitude="18.562700000000000" name="U570" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/655"
+type="waypoint" latitude="59.790100000000002" longitude="18.402600000000000" name="U571" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/656"
+type="waypoint" latitude="59.783600000000000" longitude="18.554400000000001" name="U572" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/657"
+type="waypoint" latitude="59.782699999999998" longitude="18.553200000000000" name="U573" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/658"
+type="waypoint" latitude="59.779600000000002" longitude="18.766200000000001" name="U579" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/664"
+type="waypoint" latitude="59.339100000000002" longitude="17.944800000000001" name="U58" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/665"
+type="waypoint" latitude="59.784700000000001" longitude="18.749600000000001" name="U580" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/666"
+type="waypoint" latitude="59.791300000000000" longitude="18.684999999999999" name="U581" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/667"
+type="waypoint" latitude="59.859000000000002" longitude="18.681500000000000" name="U583" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/669"
+type="waypoint" latitude="59.890400000000000" longitude="18.711400000000001" name="U584" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/670"
+type="waypoint" latitude="59.893200000000000" longitude="18.475100000000001" name="U586" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/672"
+type="waypoint" latitude="59.891399999999997" longitude="18.473400000000002" name="U587" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/673"
+type="waypoint" latitude="59.896799999999999" longitude="18.471100000000000" name="U588" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/674"
+type="waypoint" latitude="59.898499999999999" longitude="18.431899999999999" name="U589" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/675"
+type="waypoint" latitude="59.339100000000002" longitude="17.944800000000001" name="U59" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/676"
+type="waypoint" latitude="59.992500000000000" longitude="18.795400000000001" name="U593" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/677"
+type="waypoint" latitude="59.976399999999998" longitude="18.818700000000000" name="U594" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/678"
+type="waypoint" latitude="59.350400000000000" longitude="17.900900000000000" name="U60" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/680"
+type="waypoint" latitude="59.469600000000000" longitude="17.782900000000001" name="U604" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/681"
+type="waypoint" latitude="59.533600000000000" longitude="17.766999999999999" name="U607" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/684"
+type="waypoint" latitude="59.533577000000001" longitude="17.767022000000001" name="U610" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/688"
+type="waypoint" latitude="59.522100000000002" longitude="17.761099999999999" name="U611" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/689"
+type="waypoint" latitude="59.521900000000002" longitude="17.760600000000000" name="U612" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/690"
+type="waypoint" latitude="59.522799999999997" longitude="17.746200000000002" name="U616" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/694"
+type="waypoint" latitude="59.508200000000002" longitude="17.627300000000002" name="U617" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/695"
+type="waypoint" latitude="59.506000000000000" longitude="17.626600000000000" name="U619" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/697"
+type="waypoint" latitude="59.515599999999999" longitude="17.650200000000002" name="U620" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/699"
+type="waypoint" latitude="59.515799999999999" longitude="17.632200000000001" name="U621" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/700"
+type="waypoint" latitude="59.515200000000000" longitude="17.632600000000000" name="U622" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/701"
+type="waypoint" latitude="59.524000000000001" longitude="17.596599999999999" name="U623" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/702"
+type="waypoint" latitude="59.527600000000000" longitude="17.578399999999998" name="U624" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/703"
+type="waypoint" latitude="59.504199999999997" longitude="17.581600000000002" name="U625" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/704"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U66" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/708"
+type="waypoint" latitude="59.397599999999997" longitude="17.922599999999999" name="U69" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/711"
+type="waypoint" latitude="59.421799999999998" longitude="17.899699999999999" name="U72" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/714"
+type="waypoint" latitude="59.421799999999998" longitude="17.899699999999999" name="U73" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/715"
+type="waypoint" latitude="59.408000000000001" longitude="17.917000000000002" name="U74" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/716"
+type="waypoint" latitude="59.408079999999998" longitude="17.942170000000001" name="U75" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/717"
+type="waypoint" latitude="59.379300000000001" longitude="17.973700000000001" name="U77" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/719"
+type="waypoint" latitude="59.366300000000003" longitude="17.856200000000001" name="U79" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/721"
+type="waypoint" latitude="59.371800000000000" longitude="17.920000000000002" name="U80" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/723"
+type="waypoint" latitude="59.371800000000000" longitude="17.920000000000002" name="U81" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/724"
+type="waypoint" latitude="59.399099999999997" longitude="17.819600000000001" name="U86" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/726"
+type="waypoint" latitude="59.401400000000002" longitude="17.843499999999999" name="U88" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/728"
+type="waypoint" latitude="59.401400000000002" longitude="17.843499999999999" name="U89" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/729"
+type="waypoint" latitude="59.335700000000003" longitude="17.547300000000000" name="U9" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/730"
+type="waypoint" latitude="59.425600000000003" longitude="17.860299999999999" name="U90" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/731"
+type="waypoint" latitude="59.425899999999999" longitude="17.829300000000000" name="U91" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/732"
+type="waypoint" latitude="59.425899999999999" longitude="17.829300000000000" name="U92" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/733"
+type="waypoint" latitude="59.441000000000003" longitude="17.951100000000000" name="U96" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/737"
+type="waypoint" latitude="59.621738559999997" longitude="18.167788999999999" name="U Fv1993;231" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/740"
+type="waypoint" latitude="59.539600000000000" longitude="17.916799999999999" name="U Fv1959;188" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/741"
+type="waypoint" latitude="59.416100000000000" longitude="17.961099999999998" name="U Fv1953;263" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/742"
+type="waypoint" latitude="59.404400000000003" longitude="17.927199999999999" name="U RR1987;134" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/746"
+type="waypoint" latitude="59.478400000000001" longitude="17.625599999999999" name="U Fv1976;99" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/747"
+type="waypoint" latitude="59.374000000000002" longitude="18.161899999999999" name="U Fv1986;84" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/748"
+type="waypoint" latitude="59.482900000000001" longitude="18.013900000000000" name="U Fv1946;258" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/750"
+type="waypoint" latitude="59.285299999999999" longitude="17.725500000000000" name="U Fv1986;220" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/752"
+type="waypoint" latitude="59.737699999999997" longitude="18.061399999999999" name="U Fv1979;244" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/754"
+type="waypoint" latitude="59.646900000000002" longitude="17.647200000000002" name="U Fv1983;228" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/755"
+type="waypoint" latitude="59.616999999999997" longitude="17.720099999999999" name="U Fv1958;250" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/756"
+type="waypoint" latitude="59.628000000000000" longitude="17.843599999999999" name="U Fv1955;216" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/757"
+type="waypoint" latitude="59.272599999999997" longitude="17.749500000000001" name="" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/759"
+type="waypoint" latitude="59.513199999999998" longitude="17.905600000000000" name="U Fv1972;172" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/762"
+type="waypoint" latitude="59.610700000000001" longitude="18.084399999999999" name="U Fv1975;169" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/763"
+type="waypoint" latitude="59.412100000000002" longitude="17.860399999999998" name="U NOR1997;27B" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/765"
+type="waypoint" latitude="59.349899999999998" longitude="18.012200000000000" name="U NOR2002;32" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/767"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U NOR2002;33A" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/768"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U NOR2002;33B" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/769"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U NOR2002;33C" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/770"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U NOR2002;33D" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/771"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U NOR2002;33E" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/772"
+type="waypoint" latitude="59.391399999999997" longitude="17.911300000000001" name="U NOR2002;33F" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/773"
+type="waypoint" latitude="59.742600000000003" longitude="18.526800000000001" name="U 558" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/774"
+type="waypoint" latitude="59.626899999999999" longitude="17.918500000000002" name="U Fv1992;157" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/776"
+type="waypoint" latitude="59.615800000000000" longitude="17.719999999999999" name="U Fv1992;163" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/778"
+type="waypoint" latitude="59.537399999999998" longitude="17.923500000000001" name="U Fv1993;233" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/779"
+type="waypoint" latitude="59.628799999999998" longitude="17.593900000000001" name="U 656" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/783"
+type="waypoint" latitude="59.141347699999997" longitude="17.841531000000000" name="Sö SB1965;20" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/785"
+type="waypoint" latitude="59.740200000000002" longitude="18.530200000000001" name="U543" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/789"
+type="waypoint" latitude="59.740400000000001" longitude="18.530400000000000" name="U548" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/794"
+type="waypoint" latitude="59.740299999999998" longitude="18.529800000000002" name="U552" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/798"
+type="waypoint" latitude="59.740299999999998" longitude="18.529900000000001" name="U553" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/799"
+type="waypoint" latitude="59.740299999999998" longitude="18.529900000000001" name="U554" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/800"
+type="waypoint" latitude="59.618200000000002" longitude="17.649699999999999" name="U650" comment="Source: http://old.stockholmslansmuseum.se/faktabanken/visa-runa/805"
+type="waypointlistend"
+~EndLayerData
+~EndLayer
+
