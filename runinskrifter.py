@@ -78,7 +78,7 @@ class RunstenParser(HTMLParser):
                 self.longitude = dms2d(data)
 
 def main():
-    template = "type=\"waypoint\" latitude=\"%f\" longitude=\"%f\" name=\"%s\" comment = \"Source: %s\"\n"
+    template = "type=\"waypoint\" latitude=\"%.15f\" longitude=\"%.15f\" name=\"%s\" comment=\"Source: %s\"\n"
     flive = open('live.txt', 'w')
     fdead = open('dead.txt', 'w')
     for land in lands:
