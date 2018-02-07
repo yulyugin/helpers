@@ -23,7 +23,7 @@ class RunstenParser(HTMLParser):
         self.name = ""
         self.alive = True
         self.in_museum = False
-        self.in_church = True
+        self.in_church = False
         self.comment = ""
 
     def handle_starttag(self, tag, attrs):
@@ -50,8 +50,8 @@ class RunstenParser(HTMLParser):
             # Extracting coordinates
             m = re.search("GLatLng\(([0-9]*\.[0-9]*), ([0-9]*\.[0-9]*)\)", data)
             if m:
-                self.latitude = m.groups(0)[0]
-                self.longitude = m.groups(0)[1]
+                self.latitude = float(m.groups(0)[0])
+                self.longitude = float(m.groups(0)[1])
 
             # Extracting name
             m = re.search("var name = \"(.*)\";", data)
@@ -83,6 +83,11 @@ class RunstenParser(HTMLParser):
 
 def main():
     i = 1
+    template = "type=\"waypoint\" latitude=\"%.15f\" longitude=\"%.15f\" name=\"%s\" comment=\"Source: %s\"\n"
+    flive = open('live.txt', 'w')
+    fdead = open('dead.txt', 'w')
+    fmuseum = open('museum.txt', 'w')
+    fchurch = open('church.txt', 'w')
     while True:
         runsten_url = root_url + str(i)
         try:
@@ -94,11 +99,30 @@ def main():
             else:
                 raise
 
-        runsten_data = RunstenParser()
-        runsten_data.feed(data.decode('utf-8'))
+        runsten = RunstenParser()
+        runsten.feed(data.decode('utf-8'))
+
+        if runsten.latitude == 0 and runsten.longitude == 0:
+            print("Unrecognized runsten %s" % runsten_url)
+            i += 1
+            continue
+
+        output_str = template % (runsten.latitude, runsten.longitude, runsten.name, runsten_url)
+        if runsten.in_church:
+            fchurch.write(output_str)
+        elif runsten.in_museum:
+            fmuseum.write(output_str)
+        elif runsten.alive:
+            flive.write(output_str)
+        else:
+            fdead.write(output_str)
 
         i += 1
 
+    flive.close()
+    fdead.close()
+    fmuseum.close()
+    fchurch.close()
     return 0
 
 if __name__ == "__main__":
