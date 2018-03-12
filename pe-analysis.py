@@ -40,6 +40,7 @@ def main():
     analyse.optimize(e)
     analyse.category_analysis(e)
     analyse.comparative_analysis(e)
+    return 0
 
 if __name__ == "__main__":
     sys.exit(main())
