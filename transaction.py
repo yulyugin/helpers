@@ -55,12 +55,12 @@ def read_categories(filename):
 
         if "*" in line:
             name = line.replace("*", "")
-            add_pattern(ret, name, category, "^" + line.replace("*", ".*") + "$")
+            add_pattern(ret, name, category, line.replace("*", ".*") + "$")
 
         if "[" in line and "]" in line:
             # TODO: error checks
             name = line.split("[")[0]
-            add_pattern(ret, name, category, line.replace("]", "]*"))
+            add_pattern(ret, name, category, line.replace("]", "]+") + "$")
 
         if line in ret.keys():
             raise Exception("Duplicated recipient %s in %s" % (line, filename))
