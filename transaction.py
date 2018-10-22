@@ -99,7 +99,7 @@ class Transaction:
         self.amount = abs(amount)
         self.is_expense = amount < 0
 
-        self.resipient = recipient
+        self.recipient = recipient
         if self.is_expense:
             self.category = get_category(recipient)
         else:
