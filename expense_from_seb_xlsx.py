@@ -30,7 +30,7 @@ def expense_reader(filename):
     """
     ret = list()
     wb = openpyxl.load_workbook(filename = filename)
-    p = wb.get_sheet_by_name(name = 'ExportSida1')
+    p = wb['ExportSida1']
     # Skip lines that doesn't contatin relevant transaction information
     for row in islice(p.iter_rows(), 5, None):
         # Remove trailing spaces
