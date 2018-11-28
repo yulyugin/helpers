@@ -33,6 +33,8 @@ def total_expense(transactions, skip_account_transfers = True):
     for t in transactions:
         if skip_account_transfers and t.category == 'Account':
             continue
+        if t.category == 'Ignore':
+            continue
         if t.is_expense:
             total += t.amount
     return total
@@ -97,6 +99,8 @@ def category_analysis(transactions, skip_account_transfers = True):
     total = 0.
     for t in transactions:
         if skip_account_transfers and t.category == 'Account':
+            continue
+        if t.category == 'Ignore':
             continue
         if not t.is_expense:
             continue
@@ -174,6 +178,8 @@ def comparative_analysis(transactions, skip_account_transfers = True,
     for t in transactions:
         if skip_account_transfers and t.category == 'Account':
             continue
+        if t.category == 'Ignore':
+            continue
         if not t.is_expense:
             continue
 
@@ -201,6 +207,8 @@ def optimize(transactions, skip_account_transfers = True):
     for t in transactions:
         if skip_account_transfers and t.category == 'Account':
             continue
+        if t.category == 'Ignore':
+            continue
         if not t.is_expense:
             continue
         try:
@@ -211,6 +219,8 @@ def optimize(transactions, skip_account_transfers = True):
 
     for t in transactions:
         if skip_account_transfers and t.category == 'Account':
+            continue
+        if t.category == 'Ignore':
             continue
         if not t.is_expense:
             continue
