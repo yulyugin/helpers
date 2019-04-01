@@ -61,35 +61,18 @@ def pie_chart(groups, total = 1.):
     plt.show()
 
 def histogram(data, categories, labels, period_name):
-    width = 1
-    space = 2 * width
-    shift = width * len(data[0]) + space
-    ind = np.arange(len(data[0]))
-
-    # Create a color map
-    norm = plt.Normalize()
-    colors = plt.cm.jet(norm(data[-1]))
-
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-
-    label_colors = list()
-    for i in xrange(len(data)):
-        label_colors = ax.bar(ind + shift * i, data[i], width, color = colors)
-
-    # Axes and labels
-    ax.set_title("Expenses by categories and {}".format(period_name))
-    xind = np.arange(len(data))
-    for i in xind:
-        # Aligned to the center of data
-        xind[i] = (shift - space) / 2 + shift * i
-    ax.set_xticks(xind)
-    xticks = ax.set_xticklabels(categories)
-    plt.setp(xticks, rotation=45, fontsize=10)
-
-    plt.legend(label_colors, labels, loc='upper left', fontsize=10)
-    plt.grid(axis = 'y')
-
+    index = np.arange(len(labels))
+    b = [0] * len(labels)
+    i = 0
+    for d in data:
+        plt.bar(index, d, bottom=b)
+        b = [b[i] + d[i] for i in xrange(len(b))]
+        i+=1
+        if i == 6:
+            break
+    plt.xticks(index, labels, rotation=45, horizontalalignment='right')
+    plt.grid(axis='y', linestyle='--')
+    plt.legend(categories, loc='center left', bbox_to_anchor=(1, 0.5))
     plt.show()
 
 def category_analysis(transactions, skip_account_transfers = True):
@@ -114,7 +97,7 @@ class AnalysisResult():
         # amount[category][i] - amount spent for category during period i
         # periods[i] - name of period i
         self.amount = {}
-        self.amount['Total'] = []
+        self.total = []
         self.periods = []
 
     def new_category(self, category):
@@ -127,7 +110,11 @@ class AnalysisResult():
                 self.amount[category].append(0)
 
     def add_expense(self, category, amount):
-        self.amount['Total'][-1] += amount
+        try:
+            self.total[-1] += amount
+        except:
+            self.total.append(0)
+
         try:
             self.amount[category][-1] += amount
         except KeyError:
