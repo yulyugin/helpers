@@ -1,4 +1,4 @@
-#!/usr/bin/python2.7
+#!/usr/bin/python3
 """
     pe-analysis.py - tool for personal expense analysis.
 
@@ -26,10 +26,11 @@ import expense_from_seb_xlsx
 import analyse
 
 def mkenv():
-    parser = argparse.ArgumentParser(add_help=True, version='0.3',
+    parser = argparse.ArgumentParser(add_help=True,
                                      description="Personal expense analysis.")
     parser.add_argument("file", type=str, action="store",
                         help="Path to file with expense data.")
+    parser.add_argument('--version', action='version', version='0.3')
     return parser.parse_args()
 
 def main():

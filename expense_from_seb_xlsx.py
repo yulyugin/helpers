@@ -54,7 +54,7 @@ def expense_reader(filename):
             date = datetime.strptime(row[1].value, "%Y-%m-%d").date()
 
         # Remove special symbols from the end of the name
-        receiver = re.sub(ur'(([^\w]|_|\s)+)$', '', receiver)
+        receiver = re.sub(r'(([^\w]|_|\s)+)$', '', receiver)
 
         ret.append(Transaction(date, receiver, row[4].value))
 

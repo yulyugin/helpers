@@ -22,6 +22,7 @@ import numpy as np
 from datetime import timedelta, datetime, date
 from enum import Enum
 from calendar import monthrange
+from copy import deepcopy
 
 class Granularity(Enum):
     Week = 0
@@ -40,7 +41,7 @@ def total_expense(transactions, skip_account_transfers = True):
 def pie_chart(groups, total = 1.):
     payments = []
     labels = []
-    g_sorted = sorted(((v,k) for k,v in groups.iteritems()), reverse=True)
+    g_sorted = sorted(((v,k) for k,v in groups.items()), reverse=True)
     for i in g_sorted:
         payments.append(i[0])
         labels.append('{} - {:,.2f} ({:.1f}%)'.format(i[1], i[0], 100. * i[0] / total))
@@ -66,10 +67,8 @@ def histogram(data, categories, labels, period_name):
     i = 0
     for d in data:
         plt.bar(index, d, bottom=b)
-        b = [b[i] + d[i] for i in xrange(len(b))]
+        b = [b[i] + d[i] for i in range(len(b))]
         i+=1
-        if i == 6:
-            break
     plt.xticks(index, labels, rotation=45, horizontalalignment='right')
     plt.grid(axis='y', linestyle='--')
     plt.legend(categories, loc='center left', bbox_to_anchor=(1, 0.5))
@@ -106,7 +105,7 @@ class AnalysisResult():
             self.amount[category].append(0)
         else:
             self.amount[category] = []
-            for i in xrange(len(self.periods)):
+            for i in range(len(self.periods)):
                 self.amount[category].append(0)
 
     def add_expense(self, category, amount):
@@ -127,7 +126,7 @@ class AnalysisResult():
             c.append(0)
 
     def optimize_categories(self):
-        for category in self.amount.keys():
+        for category in list(self.amount.keys()):
             active_periods = 0.
             total_periods = 0.
             for period in self.amount[category]:
@@ -136,7 +135,7 @@ class AnalysisResult():
                     active_periods += 1
 
             if total_periods / active_periods > 4:
-                for i in xrange(int(total_periods)):
+                for i in range(int(total_periods)):
                     self.amount['Other'][i] += self.amount[category][i]
                 del self.amount[category]
 

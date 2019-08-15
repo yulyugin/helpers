@@ -43,7 +43,6 @@ def read_categories(filename):
     ret = {}
     category = u""
     for line in f.readlines():
-        line = line.decode('utf-8')
         line = line.split('#', 1)[0] # remove comments
         line = line.strip()
         if line == '':
@@ -84,7 +83,7 @@ def get_category(recipient):
             if p['reobj'].match(recipient):
                 return categories[p['name']]
 
-        print "Unknow category: %s" % recipient
+        print("Unknow category: %s" % recipient)
     return ret
 
 def str2number(num_str):
