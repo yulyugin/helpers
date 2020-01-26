@@ -30,11 +30,17 @@ def expense_reader(filename):
     """
     ret = list()
     wb = openpyxl.load_workbook(filename = filename)
-    p = wb['ExportSida1']
+
+    p = wb['Sheet1']
+    useless_rows = 8
+    receiver_column = 3
+    date_column = 1
+    amount_column = 4
+
     # Skip lines that doesn't contatin relevant transaction information
-    for row in islice(p.iter_rows(), 5, None):
+    for row in islice(p.iter_rows(), useless_rows, None):
         # Remove trailing spaces
-        receiver = row[3].value.strip()
+        receiver = row[receiver_column].value.strip()
         date = None
 
         # Receiver are usually in "Name/YY-MM-DD" format.
@@ -50,12 +56,12 @@ def expense_reader(filename):
                 receiver = receiver[:-(len(namedate[-1]) + 1)].strip()
 
         if date == None:
-            # Use currency date if date is not available in receiver field
-            date = datetime.strptime(row[1].value, "%Y-%m-%d").date()
+            # Use date_column if date is not available in receiver field
+            date = datetime.strptime(row[date_column].value, "%Y-%m-%d").date()
 
         # Remove special symbols from the end of the name
         receiver = re.sub(r'(([^\w]|_|\s)+)$', '', receiver)
 
-        ret.append(Transaction(date, receiver, row[4].value))
+        ret.append(Transaction(date, receiver, row[amount_column].value))
 
     return ret
