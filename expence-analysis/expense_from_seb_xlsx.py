@@ -24,26 +24,28 @@ import re
 from transaction import Transaction
 
 def expense_reader(filename):
-    """
-    File format:
-    Accounting date, currency date, verification number, receiver, amount, balance
-    """
     ret = list()
     wb = openpyxl.load_workbook(filename = filename)
 
-    p = wb['Sheet1']
-    useless_rows = 8
+    # Bokföringsdatum, Valutadatum, Verifikationsnummer, Text, Belopp, Saldo
     receiver_column = 3
-    date_column = 1
+    date_column  = 1
     amount_column = 4
+    if wb.sheetnames[0] == 'ExportSida1':
+        rows_to_skip = 5
+    elif wb.sheetnames[0] == 'Sheet1':
+        rows_to_skip = 8
+    else:
+        assert False, f'Unknown SEB format. First sheet: {wb.sheetnames[0]}'
 
+    p = wb[wb.sheetnames[0]]
     # Skip lines that doesn't contatin relevant transaction information
-    for row in islice(p.iter_rows(), useless_rows, None):
+    for row in islice(p.iter_rows(), rows_to_skip, None):
         # Remove trailing spaces
         receiver = row[receiver_column].value.strip()
         date = None
 
-        # Receiver are usually in "Name/YY-MM-DD" format.
+        # Receiver is usually in "Name/YY-MM-DD" format.
         # Separate these fields
         namedate = receiver.split('/')
         if len(namedate) >= 2:

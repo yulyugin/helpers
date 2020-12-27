@@ -25,6 +25,7 @@ patterns = []
 
 def read_categories(filename):
     def add_pattern(ret, name, category, pattern_str):
+        global patterns
         pattern = {}
         pattern['reobj'] = re.compile(pattern_str)
         pattern['name'] = name
@@ -39,7 +40,7 @@ def read_categories(filename):
         patterns.append(pattern)
         ret[name] = category
 
-    f = open(filename, 'r')
+    f = open(filename, 'r', encoding='utf-8')
     ret = {}
     category = u""
     for line in f.readlines():
@@ -69,6 +70,8 @@ def read_categories(filename):
 
 def get_category(recipient):
     global categories
+    global patterns
+
     if not categories:
         categories = read_categories("categories.txt")
 

@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
     pe-analysis.py - tool for personal expense analysis.
 
