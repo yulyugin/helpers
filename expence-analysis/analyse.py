@@ -136,7 +136,11 @@ class AnalysisResult():
 
             if total_periods / active_periods > 4:
                 for i in range(int(total_periods)):
-                    self.amount['Other'][i] += self.amount[category][i]
+                    try:
+                        self.amount['Other'][i] += self.amount[category][i]
+                    except KeyError:
+                        self.new_category('Other')
+                        self.amount['Other'][i] += self.amount[category][i]
                 del self.amount[category]
 
 def get_last_date(the_date, granularity):
