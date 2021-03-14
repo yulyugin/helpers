@@ -1,6 +1,7 @@
 """
-    expence_from_csv.py - get expense data from CSV file produces by SEB bank.
-    Copyright (C) 2017 Evgeny Yulyugin
+    Expence_from_csv.py - get expense data from CSV file produced by SEB bank.
+
+    Copyright (C) 2017 Evgenii Iuliugin
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

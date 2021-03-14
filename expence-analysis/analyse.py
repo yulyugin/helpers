@@ -1,7 +1,7 @@
 """
-    analyse.py - module that is doing expense analysis.
+    analyse.py - perform expense analysis.
 
-    Copyright (C) 2017 Evgeny Yulyugin
+    Copyright (C) 2017 Evgenii Iuliugin
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
