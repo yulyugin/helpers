@@ -65,22 +65,33 @@ class VendHTMLParser(HTMLParser):
             if self.items[-1].url and not self.items[-1].title:
                 self.items[-1].title = data
 
-def get_list(url):
-    data = urllib.request.urlopen(
-        url, context=ssl._create_unverified_context()).read()
-    parser = VendHTMLParser()
-    parser.feed(data.decode('utf-8'))
-    return parser.items
+def monitor_url(url, interval):
+    def get_list(url):
+        data = urllib.request.urlopen(
+            url, context=ssl._create_unverified_context()).read()
+        parser = VendHTMLParser()
+        parser.feed(data.decode('utf-8'))
+        return parser.items
 
-def get_new_items(new, current):
-    new = copy.deepcopy(new)
-    for c in current:
-        try:
-            new.remove(c)
-        except ValueError:
-            # It's okay for items to disappear from the new list
-            pass
-    return new
+    def get_new_items(new, current):
+        new = copy.deepcopy(new)
+        for c in current:
+            try:
+                new.remove(c)
+            except ValueError:
+                # It's okay for items to disappear from the new list
+                pass
+        return new
+
+    print(f'Starting to check "{url}" every {interval/60} minutes.')
+    current = get_list(url)
+    while True:
+        time.sleep(interval)
+        new = get_list(url)
+        new_items = get_new_items(new, current)
+        if new_items:
+            print(new_items)
+        current = new
 
 def main():
     parser = argparse.ArgumentParser(
@@ -91,15 +102,7 @@ def main():
     parser.add_argument('-u', '--url', required=True, nargs='?', type=str,
                         action='store', help='URL to monitor')
     args = parser.parse_args()
-    interval = args.interval
-    current = get_list(args.url)
-    while True:
-        time.sleep(interval)
-        new = get_list(args.url)
-        new_items = get_new_items(new, current)
-        if new_items:
-            print(new_items)
-        current = new
+    monitor_url(args.url, args.interval)
 
 if __name__ == '__main__':
     try:
