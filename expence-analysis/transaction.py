@@ -19,6 +19,9 @@
 """
 
 import re
+import glob
+import json
+from types import SimpleNamespace
 
 categories = {}
 patterns = []
@@ -68,12 +71,22 @@ def read_categories(filename):
         ret[line] = category
     return ret
 
+def read_extra_categories(folder: str) -> dict[str, str]:
+    ret: dict[str, str] = {}
+    for filename in glob.glob(f'{folder}/**.json'):
+        with open(filename, 'r', encoding='utf8') as f:
+            c = json.load(f, object_hook=lambda d: SimpleNamespace(**d))
+            for id in c.ids:
+                ret[id] = c.category
+    return ret
+
 def get_category(recipient):
     global categories
     global patterns
 
     if not categories:
         categories = read_categories("categories.txt")
+        categories.update(read_extra_categories('categories'))
 
     if recipient.isdigit():
         return "Account"
