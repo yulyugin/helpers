@@ -18,6 +18,7 @@
 import json
 from collections import OrderedDict
 import matplotlib.pyplot as plt
+from datetime import date, timedelta
 
 stats_file = "stats.json"
 
@@ -46,7 +47,7 @@ class Climb():
 
 class ClimbingSession():
     place: str
-    date: str
+    climb_date: date
     climbs: list[Climb]
     styles: list[str]
 
@@ -59,6 +60,8 @@ class ClimbingSession():
                 self.styles.append(key)
                 for c in value:
                     self.climbs.append(Climb(key, c))
+            elif key == 'date':
+                self.climb_date = date.fromisoformat(value)
             else:
                 setattr(self, key, value)
 
@@ -89,7 +92,7 @@ sessions: list[ClimbingSession] = []
 for s in stats:
     sessions.append(ClimbingSession(s))
 
-def plot_data(sessions: list[ClimbingSession], style: str):
+def bar_data(sessions: list[ClimbingSession], style: str):
     flash: dict[str, int] = {}
     redpoint: dict[str, int] = {}
     for s in sessions:
@@ -105,12 +108,56 @@ def plot_data(sessions: list[ClimbingSession], style: str):
     redpoint = OrderedDict(sorted(redpoint.items()))
     return (flash, redpoint)
 
-figure, axis = plt.subplots(len(climbing_styles), 1)
+class CumulativeStats:
+    dates: list[date]
+    climbs: list[int]
+
+    def __init__(self):
+        self.dates = []
+        self.climbs = []
+
+    def add_session(self, date: date, total_climbs: int):
+        if len(self.climbs) == 0:
+            self.climbs.append(total_climbs)
+        else:
+            self.climbs.append(self.climbs[-1] + total_climbs)
+        self.dates.append(date)
+
+def cumulative_data(sessions: list[ClimbingSession], style: str) -> dict[str, CumulativeStats]:
+    grades: dict[str, CumulativeStats] = {}
+    for s in sorted(sessions, key=lambda x: x.climb_date):
+        accums: dict[str, int] = {}
+        for c in s.session_stats(style):
+            if c.grade not in accums:
+                accums[c.grade] = 0
+            accums[c.grade] += 1
+
+        for grade, accum in accums.items():
+            if grade not in grades:
+                grades[grade] = CumulativeStats()
+            grades[grade].add_session(s.climb_date, accum)
+
+    return grades
+
+figure, axis = plt.subplots(len(climbing_styles), 2)
 
 for index, style in enumerate(climbing_styles):
-    axis[index].set_title(f'{style} stats')
-    (f, r) = plot_data(sessions, style)
-    axis[index].bar(list(f.keys()), list(f.values()), color='green')
-    axis[index].bar(list(r.keys()), list(r.values()), color='orange', bottom=list(f.values()))
+    ax = axis[index][0]
+    ax.set_title(f'{style} stats')
+    (f, r) = bar_data(sessions, style)
+    ax.bar(list(f.keys()), list(f.values()), color='green')
+    ax.bar(list(r.keys()), list(r.values()), color='orange', bottom=list(f.values()))
+
+    ax = axis[index][1]
+    ax.set_title(f'Cumulative {style} stats')
+    grades = cumulative_data(sessions, style)
+    first_day = last_day = date.today()
+    for grade, grade_stats in grades.items():
+        first_day = min(first_day, grade_stats.dates[0].replace(day=1))
+        last_day = max(last_day,
+                (grade_stats.dates[-1].replace(day=1) + timedelta(days=32)).replace(day=1))
+        ax.plot(grade_stats.dates, grade_stats.climbs)
+
+    ax.set_xlim(first_day, last_day)
 
 plt.show()
