@@ -16,16 +16,12 @@
 #
 
 import json
+from glob import glob
 from collections import OrderedDict
 import matplotlib.pyplot as plt
 from datetime import date, timedelta
 
-stats_file = "stats.json"
-
 climbing_styles: list[str] = ['Bouldering', 'Top Rope', 'Lead', 'Moonboard']
-
-with open(stats_file, 'r', encoding='utf8') as f:
-    stats = json.load(f)
 
 class Climb():
     style: str
@@ -89,8 +85,12 @@ class ClimbingSession():
         return ret
 
 sessions: list[ClimbingSession] = []
-for s in stats:
-    sessions.append(ClimbingSession(s))
+
+for stats_file in glob('stats/**.json'):
+    with open(stats_file, 'r', encoding='utf8') as f:
+        stats = json.load(f)
+        for s in stats:
+            sessions.append(ClimbingSession(s))
 
 def bar_data(sessions: list[ClimbingSession], style: str):
     flash: dict[str, int] = {}
