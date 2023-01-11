@@ -137,27 +137,34 @@ def cumulative_data(sessions: list[ClimbingSession], style: str) -> dict[str, Cu
                 grades[grade] = CumulativeStats()
             grades[grade].add_session(s.climb_date, accum)
 
-    return grades
+    return OrderedDict(sorted(grades.items()))
 
 figure, axis = plt.subplots(len(climbing_styles), 2)
 
 for index, style in enumerate(climbing_styles):
     ax = axis[index][0]
-    ax.set_title(f'{style} stats')
+    ax.set_title(f'{style} Stats')
+    ax.grid(visible=True, axis='y')
     (f, r) = bar_data(sessions, style)
-    ax.bar(list(f.keys()), list(f.values()), color='green')
-    ax.bar(list(r.keys()), list(r.values()), color='orange', bottom=list(f.values()))
+    ax.bar(list(f.keys()), list(f.values()), color='green', label='Flash')
+    ax.bar(list(r.keys()), list(r.values()), color='orange', bottom=list(f.values()), label='Redpoint')
+    ax.legend()
 
     ax = axis[index][1]
-    ax.set_title(f'Cumulative {style} stats')
+    ax.set_title(f'Cumulative {style} Stats')
+    ax.grid(visible=True, axis='y')
     grades = cumulative_data(sessions, style)
     first_day = last_day = date.today()
     for grade, grade_stats in grades.items():
         first_day = min(first_day, grade_stats.dates[0].replace(day=1))
         last_day = max(last_day,
                 (grade_stats.dates[-1].replace(day=1) + timedelta(days=32)).replace(day=1))
-        ax.plot(grade_stats.dates, grade_stats.climbs)
+        ax.plot(grade_stats.dates, grade_stats.climbs, label=grade)
+    ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left', fontsize='xx-small')
 
+    ax.set_ylim(bottom=0)
+    ax.tick_params(axis='x', labelsize='xx-small', labelrotation=20, pad=0)
     ax.set_xlim(first_day, last_day)
 
+plt.subplots_adjust(hspace=0.5)
 plt.show()
